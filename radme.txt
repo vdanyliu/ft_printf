@@ -1,0 +1,30 @@
+int        ft_printf(const char *format, ...)
+{
+    size_t    i;
+    va_list    ptr;
+    t_lst    *lst;
+    char     c;
+
+    g_len = 0;
+    g_count = g_len;
+    ft_bzero(g_buff, 8192);
+    va_start(ptr, format);
+    i = 0;
+    while (format[i])
+    {
+        if (format[i] == '%')
+        {
+            c = (char)va_arg(ptr, int);
+            i++;
+            g_flag = 0;
+            lst = create_list(format, &i, ptr);
+            read_specif(lst, ptr);
+            free(lst);
+        }
+        else
+            print_format_no_spec(format, &i);
+    }
+    va_end(ptr);
+    ft_print_buff(g_buff);
+    return (g_len);
+}
