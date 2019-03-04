@@ -63,7 +63,11 @@ file(REMOVE_RECURSE
   "CMakeFiles/ft_printf.dir/libft/ft_tolower.c.o"
   "CMakeFiles/ft_printf.dir/libft/ft_toupper.c.o"
   "CMakeFiles/ft_printf.dir/libft/get_next_line.c.o"
+  "CMakeFiles/ft_printf.dir/pf_flag_lst_create.c.o"
+  "CMakeFiles/ft_printf.dir/pf_flags_parcer.c.o"
+  "CMakeFiles/ft_printf.dir/pf_initiation_part_1.c.o"
   "CMakeFiles/ft_printf.dir/pf_main.c.o"
+  "CMakeFiles/ft_printf.dir/pf_validator_part_1.c.o"
   "ft_printf.pdb"
   "ft_printf"
 )

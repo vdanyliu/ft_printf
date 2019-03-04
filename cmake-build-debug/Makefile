@@ -39,10 +39,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /Volumes/Storage/goinfre/vdanyliu/CLion.app/Contents/bin/cmake/mac/bin/cmake
+CMAKE_COMMAND = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake
 
 # The command to remove a file.
-RM = /Volumes/Storage/goinfre/vdanyliu/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
+RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /Users/vdanyliu/Desktop/pftrintf/cmake-build-debug
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/Volumes/Storage/goinfre/vdanyliu/CLion.app/Contents/bin/cmake/mac/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -70,7 +70,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/Volumes/Storage/goinfre/vdanyliu/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -1851,6 +1851,87 @@ libft/get_next_line.c.s:
 	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/libft/get_next_line.c.s
 .PHONY : libft/get_next_line.c.s
 
+pf_flag_lst_create.o: pf_flag_lst_create.c.o
+
+.PHONY : pf_flag_lst_create.o
+
+# target to build an object file
+pf_flag_lst_create.c.o:
+	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/pf_flag_lst_create.c.o
+.PHONY : pf_flag_lst_create.c.o
+
+pf_flag_lst_create.i: pf_flag_lst_create.c.i
+
+.PHONY : pf_flag_lst_create.i
+
+# target to preprocess a source file
+pf_flag_lst_create.c.i:
+	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/pf_flag_lst_create.c.i
+.PHONY : pf_flag_lst_create.c.i
+
+pf_flag_lst_create.s: pf_flag_lst_create.c.s
+
+.PHONY : pf_flag_lst_create.s
+
+# target to generate assembly for a file
+pf_flag_lst_create.c.s:
+	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/pf_flag_lst_create.c.s
+.PHONY : pf_flag_lst_create.c.s
+
+pf_flags_parcer.o: pf_flags_parcer.c.o
+
+.PHONY : pf_flags_parcer.o
+
+# target to build an object file
+pf_flags_parcer.c.o:
+	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/pf_flags_parcer.c.o
+.PHONY : pf_flags_parcer.c.o
+
+pf_flags_parcer.i: pf_flags_parcer.c.i
+
+.PHONY : pf_flags_parcer.i
+
+# target to preprocess a source file
+pf_flags_parcer.c.i:
+	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/pf_flags_parcer.c.i
+.PHONY : pf_flags_parcer.c.i
+
+pf_flags_parcer.s: pf_flags_parcer.c.s
+
+.PHONY : pf_flags_parcer.s
+
+# target to generate assembly for a file
+pf_flags_parcer.c.s:
+	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/pf_flags_parcer.c.s
+.PHONY : pf_flags_parcer.c.s
+
+pf_initiation_part_1.o: pf_initiation_part_1.c.o
+
+.PHONY : pf_initiation_part_1.o
+
+# target to build an object file
+pf_initiation_part_1.c.o:
+	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/pf_initiation_part_1.c.o
+.PHONY : pf_initiation_part_1.c.o
+
+pf_initiation_part_1.i: pf_initiation_part_1.c.i
+
+.PHONY : pf_initiation_part_1.i
+
+# target to preprocess a source file
+pf_initiation_part_1.c.i:
+	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/pf_initiation_part_1.c.i
+.PHONY : pf_initiation_part_1.c.i
+
+pf_initiation_part_1.s: pf_initiation_part_1.c.s
+
+.PHONY : pf_initiation_part_1.s
+
+# target to generate assembly for a file
+pf_initiation_part_1.c.s:
+	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/pf_initiation_part_1.c.s
+.PHONY : pf_initiation_part_1.c.s
+
 pf_main.o: pf_main.c.o
 
 .PHONY : pf_main.o
@@ -1877,6 +1958,33 @@ pf_main.s: pf_main.c.s
 pf_main.c.s:
 	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/pf_main.c.s
 .PHONY : pf_main.c.s
+
+pf_validator_part_1.o: pf_validator_part_1.c.o
+
+.PHONY : pf_validator_part_1.o
+
+# target to build an object file
+pf_validator_part_1.c.o:
+	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/pf_validator_part_1.c.o
+.PHONY : pf_validator_part_1.c.o
+
+pf_validator_part_1.i: pf_validator_part_1.c.i
+
+.PHONY : pf_validator_part_1.i
+
+# target to preprocess a source file
+pf_validator_part_1.c.i:
+	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/pf_validator_part_1.c.i
+.PHONY : pf_validator_part_1.c.i
+
+pf_validator_part_1.s: pf_validator_part_1.c.s
+
+.PHONY : pf_validator_part_1.s
+
+# target to generate assembly for a file
+pf_validator_part_1.c.s:
+	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/pf_validator_part_1.c.s
+.PHONY : pf_validator_part_1.c.s
 
 # Help Target
 help:
@@ -2079,9 +2187,21 @@ help:
 	@echo "... libft/get_next_line.o"
 	@echo "... libft/get_next_line.i"
 	@echo "... libft/get_next_line.s"
+	@echo "... pf_flag_lst_create.o"
+	@echo "... pf_flag_lst_create.i"
+	@echo "... pf_flag_lst_create.s"
+	@echo "... pf_flags_parcer.o"
+	@echo "... pf_flags_parcer.i"
+	@echo "... pf_flags_parcer.s"
+	@echo "... pf_initiation_part_1.o"
+	@echo "... pf_initiation_part_1.i"
+	@echo "... pf_initiation_part_1.s"
 	@echo "... pf_main.o"
 	@echo "... pf_main.i"
 	@echo "... pf_main.s"
+	@echo "... pf_validator_part_1.o"
+	@echo "... pf_validator_part_1.i"
+	@echo "... pf_validator_part_1.s"
 .PHONY : help
 
 
