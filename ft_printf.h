@@ -44,11 +44,15 @@ typedef struct			s_type
 	struct s_type		*next;
 }						t_type;
 
+int						g_len;
 int						pf_any_procent(char *str);
-void					pf_type_initiation(t_type *head, char *format);
+void					pf_type_initiation(t_type **head, char *format);
 t_type					*pf_create_type_lst();
 void					pf_type_deafult_flags(t_type *buff, char *str);
 void					pf_type_cs_flags(t_type *curr, char *str);
+void					pf_type_diouxX_flags(t_type *curr, char *str);
 int 					pf_is_type(char c);
+char 					*pf_write_and_remalloc(char *str);
+char 					*pf_skip_flag_remalloc(char *str);
 
 #endif

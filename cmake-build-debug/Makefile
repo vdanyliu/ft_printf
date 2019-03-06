@@ -1986,6 +1986,33 @@ pf_validator_part_1.c.s:
 	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/pf_validator_part_1.c.s
 .PHONY : pf_validator_part_1.c.s
 
+pf_writer.o: pf_writer.c.o
+
+.PHONY : pf_writer.o
+
+# target to build an object file
+pf_writer.c.o:
+	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/pf_writer.c.o
+.PHONY : pf_writer.c.o
+
+pf_writer.i: pf_writer.c.i
+
+.PHONY : pf_writer.i
+
+# target to preprocess a source file
+pf_writer.c.i:
+	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/pf_writer.c.i
+.PHONY : pf_writer.c.i
+
+pf_writer.s: pf_writer.c.s
+
+.PHONY : pf_writer.s
+
+# target to generate assembly for a file
+pf_writer.c.s:
+	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/pf_writer.c.s
+.PHONY : pf_writer.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -2202,6 +2229,9 @@ help:
 	@echo "... pf_validator_part_1.o"
 	@echo "... pf_validator_part_1.i"
 	@echo "... pf_validator_part_1.s"
+	@echo "... pf_writer.o"
+	@echo "... pf_writer.i"
+	@echo "... pf_writer.s"
 .PHONY : help
 
 

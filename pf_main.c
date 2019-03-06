@@ -7,27 +7,43 @@
 int 	ft_printf(const char *format, ...)
 {
 	va_list			ptr;
-	static t_type	*head = NULL;
+	t_type			*head;
+	t_type			*buff;
+	char 			*format_buff;
 
+
+	head = NULL;
+	g_len = 0;
 	va_start(ptr, format);
-	if (pf_any_procent(format) == 0)
+	if (pf_any_procent((char*)format) == 0)
 	{
-		write(1, format, ft_strlen(format));
-		return ((int)ft_strlen(format));
+		write(1, format, g_len = ft_strlen((char*)format));
+		return (g_len);
 	}
 	else
+		pf_type_initiation(&head, (char*)format);
+	buff = head;
+	format_buff = ft_strdup(format);
+	while (*format_buff)
 	{
-		pf_type_initiation(head, format);
+		if (*format_buff != '%')
+			format_buff = pf_write_and_remalloc(format_buff);
+		else
+		{
+			format_buff = pf_skip_flag_remalloc(format_buff);
+		}
 	}
-	return (0);
+	return (g_len);
 }
 
 int 	main(void)
 {
+	int i;
 	char *str = "Hello world";
 
-	printf("Hello\n%s", str);
-	//ft_printf("Hello world\n", c);
+	printf("He%llo\n", str);
+	i = ft_printf("He%llo world\n", str);
+	ft_putendl(ft_itoa(i));
 	return (0);
 }
 

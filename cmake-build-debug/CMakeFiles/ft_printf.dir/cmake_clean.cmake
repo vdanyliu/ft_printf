@@ -68,6 +68,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/ft_printf.dir/pf_initiation_part_1.c.o"
   "CMakeFiles/ft_printf.dir/pf_main.c.o"
   "CMakeFiles/ft_printf.dir/pf_validator_part_1.c.o"
+  "CMakeFiles/ft_printf.dir/pf_writer.c.o"
   "ft_printf.pdb"
   "ft_printf"
 )

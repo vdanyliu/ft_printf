@@ -184,6 +184,18 @@ CMakeFiles/ft_printf.dir/libft/ft_toupper.c.o
 CMakeFiles/ft_printf.dir/libft/get_next_line.c.o
  /Users/vdanyliu/Desktop/pftrintf/libft/get_next_line.c
  /Users/vdanyliu/Desktop/pftrintf/libft/libft.h
+CMakeFiles/ft_printf.dir/pf_flag_lst_create.c.o
+ /Users/vdanyliu/Desktop/pftrintf/ft_printf.h
+ /Users/vdanyliu/Desktop/pftrintf/libft/libft.h
+ /Users/vdanyliu/Desktop/pftrintf/pf_flag_lst_create.c
+CMakeFiles/ft_printf.dir/pf_flags_parcer.c.o
+ /Users/vdanyliu/Desktop/pftrintf/ft_printf.h
+ /Users/vdanyliu/Desktop/pftrintf/libft/libft.h
+ /Users/vdanyliu/Desktop/pftrintf/pf_flags_parcer.c
+CMakeFiles/ft_printf.dir/pf_initiation_part_1.c.o
+ /Users/vdanyliu/Desktop/pftrintf/ft_printf.h
+ /Users/vdanyliu/Desktop/pftrintf/libft/libft.h
+ /Users/vdanyliu/Desktop/pftrintf/pf_initiation_part_1.c
 CMakeFiles/ft_printf.dir/pf_main.c.o
  /Users/vdanyliu/Desktop/pftrintf/ft_printf.h
  /Users/vdanyliu/Desktop/pftrintf/libft/libft.h
@@ -192,3 +204,7 @@ CMakeFiles/ft_printf.dir/pf_validator_part_1.c.o
  /Users/vdanyliu/Desktop/pftrintf/ft_printf.h
  /Users/vdanyliu/Desktop/pftrintf/libft/libft.h
  /Users/vdanyliu/Desktop/pftrintf/pf_validator_part_1.c
+CMakeFiles/ft_printf.dir/pf_writer.c.o
+ /Users/vdanyliu/Desktop/pftrintf/ft_printf.h
+ /Users/vdanyliu/Desktop/pftrintf/libft/libft.h
+ /Users/vdanyliu/Desktop/pftrintf/pf_writer.c

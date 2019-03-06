@@ -184,6 +184,18 @@ CMakeFiles/ft_printf.dir/libft/ft_toupper.c.o: ../libft/libft.h
 CMakeFiles/ft_printf.dir/libft/get_next_line.c.o: ../libft/get_next_line.c
 CMakeFiles/ft_printf.dir/libft/get_next_line.c.o: ../libft/libft.h
 
+CMakeFiles/ft_printf.dir/pf_flag_lst_create.c.o: ../ft_printf.h
+CMakeFiles/ft_printf.dir/pf_flag_lst_create.c.o: ../libft/libft.h
+CMakeFiles/ft_printf.dir/pf_flag_lst_create.c.o: ../pf_flag_lst_create.c
+
+CMakeFiles/ft_printf.dir/pf_flags_parcer.c.o: ../ft_printf.h
+CMakeFiles/ft_printf.dir/pf_flags_parcer.c.o: ../libft/libft.h
+CMakeFiles/ft_printf.dir/pf_flags_parcer.c.o: ../pf_flags_parcer.c
+
+CMakeFiles/ft_printf.dir/pf_initiation_part_1.c.o: ../ft_printf.h
+CMakeFiles/ft_printf.dir/pf_initiation_part_1.c.o: ../libft/libft.h
+CMakeFiles/ft_printf.dir/pf_initiation_part_1.c.o: ../pf_initiation_part_1.c
+
 CMakeFiles/ft_printf.dir/pf_main.c.o: ../ft_printf.h
 CMakeFiles/ft_printf.dir/pf_main.c.o: ../libft/libft.h
 CMakeFiles/ft_printf.dir/pf_main.c.o: ../pf_main.c
@@ -191,4 +203,8 @@ CMakeFiles/ft_printf.dir/pf_main.c.o: ../pf_main.c
 CMakeFiles/ft_printf.dir/pf_validator_part_1.c.o: ../ft_printf.h
 CMakeFiles/ft_printf.dir/pf_validator_part_1.c.o: ../libft/libft.h
 CMakeFiles/ft_printf.dir/pf_validator_part_1.c.o: ../pf_validator_part_1.c
+
+CMakeFiles/ft_printf.dir/pf_writer.c.o: ../ft_printf.h
+CMakeFiles/ft_printf.dir/pf_writer.c.o: ../libft/libft.h
+CMakeFiles/ft_printf.dir/pf_writer.c.o: ../pf_writer.c
 

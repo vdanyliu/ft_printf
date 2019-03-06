@@ -293,6 +293,9 @@
 		<Unit filename="/Users/vdanyliu/Desktop/pftrintf/pf_validator_part_1.c">
 			<Option target="ft_printf"/>
 		</Unit>
+		<Unit filename="/Users/vdanyliu/Desktop/pftrintf/pf_writer.c">
+			<Option target="ft_printf"/>
+		</Unit>
 		<Unit filename="/Users/vdanyliu/Desktop/pftrintf/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

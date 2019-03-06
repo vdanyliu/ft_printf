@@ -56,7 +56,7 @@ void	pf_parce_flag(t_type *buff, char *str)		//Записывает флаги �
 	int i;
 
 	i = pf_type_group(buff->type);
-	while (pf_is_type(*str) == 0)
+	while (*str &&pf_is_type(*str) == 0)
 	{
 		pf_type_deafult_flags(buff, str);
 		if (i == 1)
@@ -71,10 +71,11 @@ void	pf_parce_flag(t_type *buff, char *str)		//Записывает флаги �
 		{
 			pf_type_diouxX_flags(buff, str);
 		}
+		str++;
 	}
 }
 
-void	pf_type_initiation(t_type *head, char *format)
+void	pf_type_initiation(t_type **head, char *format)
 {
 	char	*buff_begin;
 	char 	*buff_end;
@@ -85,7 +86,7 @@ void	pf_type_initiation(t_type *head, char *format)
 	{
 		if (*buff_begin == '%' && *(buff_begin + 1))
 		{
-			type_buff = pf_add_end_list(head);
+			type_buff = pf_add_end_list(*head);
 			buff_end = (buff_begin + 1);
 			while (*buff_end && pf_is_type(*buff_end) == 0)
 				buff_end++;
@@ -94,5 +95,7 @@ void	pf_type_initiation(t_type *head, char *format)
 			while (buff_begin != buff_end)
 				pf_parce_flag(type_buff, buff_begin++);
 		}
+		else
+			buff_begin++;
 	}
 }
