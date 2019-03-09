@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/ft_printf.dir/free.c.o"
   "CMakeFiles/ft_printf.dir/libft/ft_atoi.c.o"
   "CMakeFiles/ft_printf.dir/libft/ft_bzero.c.o"
   "CMakeFiles/ft_printf.dir/libft/ft_charcount.c.o"
@@ -67,6 +68,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/ft_printf.dir/pf_flags_parcer.c.o"
   "CMakeFiles/ft_printf.dir/pf_initiation_part_1.c.o"
   "CMakeFiles/ft_printf.dir/pf_main.c.o"
+  "CMakeFiles/ft_printf.dir/pf_print_part_one.c.o"
   "CMakeFiles/ft_printf.dir/pf_validator_part_1.c.o"
   "CMakeFiles/ft_printf.dir/pf_writer.c.o"
   "ft_printf.pdb"

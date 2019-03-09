@@ -15,3 +15,4 @@ add_executable(ft_printf
 #set(GCC_COVERAGE_COMPILE_FLAGS "-Wall -Wextra -Werror")
 #set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} ${GCC_COVERAGE_COMPILE_FLAGS}" )
 #target_link_libraries(ft_printf -lmlx "-framework OpenGL" "-framework AppKit")
+

@@ -4,6 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
+  "/Users/vdanyliu/Desktop/pftrintf/free.c" "/Users/vdanyliu/Desktop/pftrintf/cmake-build-debug/CMakeFiles/ft_printf.dir/free.c.o"
   "/Users/vdanyliu/Desktop/pftrintf/libft/ft_atoi.c" "/Users/vdanyliu/Desktop/pftrintf/cmake-build-debug/CMakeFiles/ft_printf.dir/libft/ft_atoi.c.o"
   "/Users/vdanyliu/Desktop/pftrintf/libft/ft_bzero.c" "/Users/vdanyliu/Desktop/pftrintf/cmake-build-debug/CMakeFiles/ft_printf.dir/libft/ft_bzero.c.o"
   "/Users/vdanyliu/Desktop/pftrintf/libft/ft_charcount.c" "/Users/vdanyliu/Desktop/pftrintf/cmake-build-debug/CMakeFiles/ft_printf.dir/libft/ft_charcount.c.o"
@@ -72,6 +73,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/vdanyliu/Desktop/pftrintf/pf_flags_parcer.c" "/Users/vdanyliu/Desktop/pftrintf/cmake-build-debug/CMakeFiles/ft_printf.dir/pf_flags_parcer.c.o"
   "/Users/vdanyliu/Desktop/pftrintf/pf_initiation_part_1.c" "/Users/vdanyliu/Desktop/pftrintf/cmake-build-debug/CMakeFiles/ft_printf.dir/pf_initiation_part_1.c.o"
   "/Users/vdanyliu/Desktop/pftrintf/pf_main.c" "/Users/vdanyliu/Desktop/pftrintf/cmake-build-debug/CMakeFiles/ft_printf.dir/pf_main.c.o"
+  "/Users/vdanyliu/Desktop/pftrintf/pf_print_part_one.c" "/Users/vdanyliu/Desktop/pftrintf/cmake-build-debug/CMakeFiles/ft_printf.dir/pf_print_part_one.c.o"
   "/Users/vdanyliu/Desktop/pftrintf/pf_validator_part_1.c" "/Users/vdanyliu/Desktop/pftrintf/cmake-build-debug/CMakeFiles/ft_printf.dir/pf_validator_part_1.c.o"
   "/Users/vdanyliu/Desktop/pftrintf/pf_writer.c" "/Users/vdanyliu/Desktop/pftrintf/cmake-build-debug/CMakeFiles/ft_printf.dir/pf_writer.c.o"
   )

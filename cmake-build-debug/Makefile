@@ -123,6 +123,33 @@ ft_printf/fast:
 	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/build
 .PHONY : ft_printf/fast
 
+free.o: free.c.o
+
+.PHONY : free.o
+
+# target to build an object file
+free.c.o:
+	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/free.c.o
+.PHONY : free.c.o
+
+free.i: free.c.i
+
+.PHONY : free.i
+
+# target to preprocess a source file
+free.c.i:
+	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/free.c.i
+.PHONY : free.c.i
+
+free.s: free.c.s
+
+.PHONY : free.s
+
+# target to generate assembly for a file
+free.c.s:
+	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/free.c.s
+.PHONY : free.c.s
+
 libft/ft_atoi.o: libft/ft_atoi.c.o
 
 .PHONY : libft/ft_atoi.o
@@ -1959,6 +1986,33 @@ pf_main.c.s:
 	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/pf_main.c.s
 .PHONY : pf_main.c.s
 
+pf_print_part_one.o: pf_print_part_one.c.o
+
+.PHONY : pf_print_part_one.o
+
+# target to build an object file
+pf_print_part_one.c.o:
+	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/pf_print_part_one.c.o
+.PHONY : pf_print_part_one.c.o
+
+pf_print_part_one.i: pf_print_part_one.c.i
+
+.PHONY : pf_print_part_one.i
+
+# target to preprocess a source file
+pf_print_part_one.c.i:
+	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/pf_print_part_one.c.i
+.PHONY : pf_print_part_one.c.i
+
+pf_print_part_one.s: pf_print_part_one.c.s
+
+.PHONY : pf_print_part_one.s
+
+# target to generate assembly for a file
+pf_print_part_one.c.s:
+	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/pf_print_part_one.c.s
+.PHONY : pf_print_part_one.c.s
+
 pf_validator_part_1.o: pf_validator_part_1.c.o
 
 .PHONY : pf_validator_part_1.o
@@ -2022,6 +2076,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... ft_printf"
+	@echo "... free.o"
+	@echo "... free.i"
+	@echo "... free.s"
 	@echo "... libft/ft_atoi.o"
 	@echo "... libft/ft_atoi.i"
 	@echo "... libft/ft_atoi.s"
@@ -2226,6 +2283,9 @@ help:
 	@echo "... pf_main.o"
 	@echo "... pf_main.i"
 	@echo "... pf_main.s"
+	@echo "... pf_print_part_one.o"
+	@echo "... pf_print_part_one.i"
+	@echo "... pf_print_part_one.s"
 	@echo "... pf_validator_part_1.o"
 	@echo "... pf_validator_part_1.i"
 	@echo "... pf_validator_part_1.s"

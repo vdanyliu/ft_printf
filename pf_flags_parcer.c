@@ -22,7 +22,7 @@ void	pf_type_deafult_flags(t_type *curr, char *str)
 	buff = str;
 	while (*buff && !ft_isdigit(*buff) && *buff != '0' && pf_is_type(*buff) == 0)
 		buff++;
-	if (*buff && pf_is_type(*buff) != 0 && *(buff - 1) != '.')
+	if (*buff && pf_is_type(*buff) == 0 && *(buff - 1) != '.' && type_buff->width->width == 0)
 		type_buff->width->width = ft_atoi(buff);
 }
 

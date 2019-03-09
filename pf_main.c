@@ -15,24 +15,23 @@ int 	ft_printf(const char *format, ...)
 	head = NULL;
 	g_len = 0;
 	va_start(ptr, format);
-	if (pf_any_procent((char*)format) == 0)
-	{
-		write(1, format, g_len = ft_strlen((char*)format));
-		return (g_len);
-	}
-	else
-		pf_type_initiation(&head, (char*)format);
+	pf_type_initiation(&head, (char*)format);
 	buff = head;
 	format_buff = ft_strdup(format);
 	while (*format_buff)
 	{
 		if (*format_buff != '%')
-			format_buff = pf_write_and_remalloc(format_buff);
+			pf_write_and_remalloc(&format_buff);
 		else
 		{
-			format_buff = pf_skip_flag_remalloc(format_buff);
+			pf_skip_flag_remalloc(&format_buff);
+			pf_write_flag(ptr, &buff);
 		}
 	}
+	ft_free_t_type(head);
+	free(format_buff);
+	va_end(ptr);
+	//system("leaks -q ft_printf");
 	return (g_len);
 }
 
@@ -40,10 +39,13 @@ int 	main(void)
 {
 	int i;
 	char *str = "Hello world";
+	char *leak;
 
-	printf("He%llo\n", str);
-	i = ft_printf("He%llo world\n", str);
-	ft_putendl(ft_itoa(i));
+	printf("He%cllo w%or%0-10%ld\n", *str);
+	i = ft_printf("He%cllo w%or%0-10%ld\n", *str);
+	ft_putendl(leak = ft_itoa(i));
+	free(leak);
+	system("leaks -q ft_printf");
 	return (0);
 }
 

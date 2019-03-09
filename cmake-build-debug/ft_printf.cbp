@@ -80,6 +80,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/vdanyliu/Desktop/pftrintf/free.c">
+			<Option target="ft_printf"/>
+		</Unit>
 		<Unit filename="/Users/vdanyliu/Desktop/pftrintf/ft_printf.h">
 			<Option target="ft_printf"/>
 		</Unit>
@@ -288,6 +291,9 @@
 			<Option target="ft_printf"/>
 		</Unit>
 		<Unit filename="/Users/vdanyliu/Desktop/pftrintf/pf_main.c">
+			<Option target="ft_printf"/>
+		</Unit>
+		<Unit filename="/Users/vdanyliu/Desktop/pftrintf/pf_print_part_one.c">
 			<Option target="ft_printf"/>
 		</Unit>
 		<Unit filename="/Users/vdanyliu/Desktop/pftrintf/pf_validator_part_1.c">

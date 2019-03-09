@@ -35,16 +35,16 @@ int 	pf_type_group(int c)	//Return number of type group;
 	return (0);
 }
 
-t_type	*pf_add_end_list(t_type *head)
+static t_type	*pf_add_end_list(t_type **head)
 {
 	t_type	*buff;
 
-	if (head == NULL)
+	if (*head == NULL)
 	{
-		head = pf_create_type_lst();
-		return (head);
+		*head = pf_create_type_lst();
+		return (*head);
 	}
-	buff = head;
+	buff = *head;
 	while (buff->next)
 		buff = buff->next;
 	buff->next = pf_create_type_lst();
@@ -84,9 +84,10 @@ void	pf_type_initiation(t_type **head, char *format)
 	buff_begin = format;
 	while(*buff_begin)
 	{
+
 		if (*buff_begin == '%' && *(buff_begin + 1))
 		{
-			type_buff = pf_add_end_list(*head);
+			type_buff = pf_add_end_list(head);
 			buff_end = (buff_begin + 1);
 			while (*buff_end && pf_is_type(*buff_end) == 0)
 				buff_end++;

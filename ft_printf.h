@@ -52,7 +52,13 @@ void					pf_type_deafult_flags(t_type *buff, char *str);
 void					pf_type_cs_flags(t_type *curr, char *str);
 void					pf_type_diouxX_flags(t_type *curr, char *str);
 int 					pf_is_type(char c);
-char 					*pf_write_and_remalloc(char *str);
-char 					*pf_skip_flag_remalloc(char *str);
+void 					pf_write_and_remalloc(char **str);
+void 					pf_skip_flag_remalloc(char **str);
+void					pf_write_flag(va_list ptr, t_type **lst);
+void					ft_free_t_type(t_type *head);
+int						pf_type_group(int c);
+void					pf_print_procent(t_type *buff);
+char 					*pf_spaces(t_type *buff, int i);
+char 					*pf_union(t_type *buff, char *str1, char *str2);
 
 #endif
