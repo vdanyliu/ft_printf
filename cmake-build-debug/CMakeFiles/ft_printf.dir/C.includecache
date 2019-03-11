@@ -28,7 +28,7 @@ sys/stat.h
 sys/types.h
 -
 
-/Users/vdanyliu/Desktop/pftrintf/pf_initiation_part_1.c
+/Users/vdanyliu/Desktop/pftrintf/pf_main.c
 ft_printf.h
 /Users/vdanyliu/Desktop/pftrintf/ft_printf.h
 

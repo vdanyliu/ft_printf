@@ -59,17 +59,8 @@ void	pf_parce_flag(t_type *buff, char *str)		//Записывает флаги �
 	while (*str &&pf_is_type(*str) == 0)
 	{
 		pf_type_deafult_flags(buff, str);
-		if (i == 1)
-			pf_type_cs_flags(buff, str);
-		if (i == 2)
-		{
-			pf_type_cs_flags(buff, str);
-			pf_type_diouxX_flags(buff, str);
-		}
-		if (i == 3)
-		{
-			pf_type_diouxX_flags(buff, str);
-		}
+		pf_type_cs_flags(buff, str);
+		pf_type_diouxX_flags(buff, str);
 		str++;
 	}
 }
@@ -94,6 +85,7 @@ void	pf_type_initiation(t_type **head, char *format)
 			buff_begin++;
 			while (buff_begin != buff_end)
 				pf_parce_flag(type_buff, buff_begin++);
+			buff_begin++;
 		}
 		else
 			buff_begin++;

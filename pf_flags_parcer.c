@@ -43,8 +43,8 @@ void	pf_type_diouxX_flags(t_type *curr, char *str)
 			type_buff->spec = 1;
 		if (*buff == 'l' && type_buff->spec == 0)
 			type_buff->spec = 3;
-		if (*buff == '.' && *(buff + 1) && pf_is_type(*(buff + 1) == 0) && type_buff->accur->number == 0)
-			type_buff->accur->number = ft_atoi(buff);
+		if (*buff == '.' && type_buff->accur->number == -1)
+			type_buff->accur->number = ft_atoi(buff + 1);
 		else if (*buff == '.' && *(buff + 1) == '*')
 			type_buff->accur->star = 1;
 		buff++;

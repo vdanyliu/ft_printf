@@ -32,7 +32,7 @@ t_accuracy		*pf_create_accur_lst()
 	t_accuracy	*lst;
 
 	lst = (t_accuracy*)malloc(sizeof(t_accuracy));
-	lst->number = 0;
+	lst->number = -1;
 	lst->star = 0;
 	return (lst);
 }

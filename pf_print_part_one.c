@@ -39,8 +39,22 @@ static void	pf_print_string(t_type *buff, char *str)
 	char	*str1;
 	char 	*str2;
 	size_t 	i;
+	char 	*strnull;
 
-	str2 = ft_strdup(str);
+	if (str == NULL)
+	{
+		strnull = ft_strdup("(null)");
+		if (buff->accur->number == -1)
+			str2 = ft_strdup(strnull);
+		else
+			str2 = ft_strsub(strnull, 0, strnull - (strnull - buff->accur->number));
+		free(strnull);
+	}
+	else
+		if (buff->accur->number == -1)
+			str2 = ft_strdup(str);
+		else
+			str2 = ft_strsub(str, 0, str - (str - buff->accur->number));
 	str1 = pf_spaces(buff, (buff->width->width - ft_strlen(str2)));
 	str1 = pf_union(buff, str1, str2);
 	i = ft_strlen(str1);

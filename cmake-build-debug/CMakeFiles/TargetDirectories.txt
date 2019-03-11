@@ -1,3 +1,4 @@
 /Users/vdanyliu/Desktop/pftrintf/cmake-build-debug/CMakeFiles/rebuild_cache.dir
 /Users/vdanyliu/Desktop/pftrintf/cmake-build-debug/CMakeFiles/edit_cache.dir
 /Users/vdanyliu/Desktop/pftrintf/cmake-build-debug/CMakeFiles/ft_printf.dir
+/Users/vdanyliu/Desktop/pftrintf/cmake-build-debug/CMakeFiles/ft.dir
