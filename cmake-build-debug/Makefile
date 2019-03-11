@@ -1959,6 +1959,33 @@ pf_initiation_part_1.c.s:
 	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/pf_initiation_part_1.c.s
 .PHONY : pf_initiation_part_1.c.s
 
+pf_itoabase.o: pf_itoabase.c.o
+
+.PHONY : pf_itoabase.o
+
+# target to build an object file
+pf_itoabase.c.o:
+	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/pf_itoabase.c.o
+.PHONY : pf_itoabase.c.o
+
+pf_itoabase.i: pf_itoabase.c.i
+
+.PHONY : pf_itoabase.i
+
+# target to preprocess a source file
+pf_itoabase.c.i:
+	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/pf_itoabase.c.i
+.PHONY : pf_itoabase.c.i
+
+pf_itoabase.s: pf_itoabase.c.s
+
+.PHONY : pf_itoabase.s
+
+# target to generate assembly for a file
+pf_itoabase.c.s:
+	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/pf_itoabase.c.s
+.PHONY : pf_itoabase.c.s
+
 pf_main.o: pf_main.c.o
 
 .PHONY : pf_main.o
@@ -2280,6 +2307,9 @@ help:
 	@echo "... pf_initiation_part_1.o"
 	@echo "... pf_initiation_part_1.i"
 	@echo "... pf_initiation_part_1.s"
+	@echo "... pf_itoabase.o"
+	@echo "... pf_itoabase.i"
+	@echo "... pf_itoabase.s"
 	@echo "... pf_main.o"
 	@echo "... pf_main.i"
 	@echo "... pf_main.s"

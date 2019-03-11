@@ -67,6 +67,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/ft_printf.dir/pf_flag_lst_create.c.o"
   "CMakeFiles/ft_printf.dir/pf_flags_parcer.c.o"
   "CMakeFiles/ft_printf.dir/pf_initiation_part_1.c.o"
+  "CMakeFiles/ft_printf.dir/pf_itoabase.c.o"
   "CMakeFiles/ft_printf.dir/pf_main.c.o"
   "CMakeFiles/ft_printf.dir/pf_print_part_one.c.o"
   "CMakeFiles/ft_printf.dir/pf_validator_part_1.c.o"

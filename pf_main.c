@@ -37,15 +37,20 @@ int 	ft_printf(const char *format, ...)
 
 int 	main(void)
 {
-	int i;
+	unsigned long long int i;
 	char *str = "Hello world";
 	char *leak;
 
-	printf("He%cllo w%or%0-10%ld\n", *str);
-	i = ft_printf("He%cllo w%or%0-10%ld\n", *str);
+	printf("He%cllo w%sr%0-10%ld\n", *str, str);
+	i = ft_printf("He%cllo w%sr%-10%ld\n", *str, str);
 	ft_putendl(leak = ft_itoa(i));
 	free(leak);
 	system("leaks -q ft_printf");
+	printf("a%20pa\n", str);
+	ft_printf("a%20pa\n", str);
+	system("leaks -q ft_printf");
+	i = str;
+	printf("%i", i);
 	return (0);
 }
 

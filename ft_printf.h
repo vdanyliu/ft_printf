@@ -58,7 +58,9 @@ void					pf_write_flag(va_list ptr, t_type **lst);
 void					ft_free_t_type(t_type *head);
 int						pf_type_group(int c);
 void					pf_print_procent(t_type *buff);
+void					pf_print_csp(t_type *buff, va_list ptr);
 char 					*pf_spaces(t_type *buff, int i);
 char 					*pf_union(t_type *buff, char *str1, char *str2);
+char 					*pf_itoabase(signed long long int i, int base);
 
 #endif

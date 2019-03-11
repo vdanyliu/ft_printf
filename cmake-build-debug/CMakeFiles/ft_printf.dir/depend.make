@@ -200,6 +200,10 @@ CMakeFiles/ft_printf.dir/pf_initiation_part_1.c.o: ../ft_printf.h
 CMakeFiles/ft_printf.dir/pf_initiation_part_1.c.o: ../libft/libft.h
 CMakeFiles/ft_printf.dir/pf_initiation_part_1.c.o: ../pf_initiation_part_1.c
 
+CMakeFiles/ft_printf.dir/pf_itoabase.c.o: ../ft_printf.h
+CMakeFiles/ft_printf.dir/pf_itoabase.c.o: ../libft/libft.h
+CMakeFiles/ft_printf.dir/pf_itoabase.c.o: ../pf_itoabase.c
+
 CMakeFiles/ft_printf.dir/pf_main.c.o: ../ft_printf.h
 CMakeFiles/ft_printf.dir/pf_main.c.o: ../libft/libft.h
 CMakeFiles/ft_printf.dir/pf_main.c.o: ../pf_main.c

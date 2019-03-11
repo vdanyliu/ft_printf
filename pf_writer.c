@@ -29,6 +29,7 @@ void					pf_write_flag(va_list ptr, t_type **lst)
 	buff = *lst;
 	i = pf_type_group(buff->type);
 	i == 100 ? pf_print_procent(buff) : 0;
+	(i == 1 || i == 2) ? pf_print_csp(buff, ptr) : 0;
 	*lst = (*lst)->next;
 }
 

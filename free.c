@@ -23,6 +23,8 @@ char 		*pf_union(t_type *buff, char *str1, char *str2)
 	char 	*str1buff;
 	char 	*str2buff;
 
+	if (str1 == NULL)
+		return (str2);
 	i = ft_strlen(str1);
 	i += ft_strlen(str2);
 	res = (char*)malloc(sizeof(char) * (i + 1));
@@ -55,6 +57,8 @@ char 		*pf_spaces(t_type *buff, int i)
 	int 	j;
 	char 	c;
 
+	if (i <= 0)
+		return (NULL);
 	c = ' ';
 	if (buff->flag->zero == 1)
 		c = '0';

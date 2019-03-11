@@ -60,13 +60,12 @@ void	pf_parce_flag(t_type *buff, char *str)		//Записывает флаги �
 	{
 		pf_type_deafult_flags(buff, str);
 		if (i == 1)
+			pf_type_cs_flags(buff, str);
+		if (i == 2)
 		{
 			pf_type_cs_flags(buff, str);
+			pf_type_diouxX_flags(buff, str);
 		}
-//		else if (i == 2)
-//		{
-//			potom;
-//		}
 		if (i == 3)
 		{
 			pf_type_diouxX_flags(buff, str);
