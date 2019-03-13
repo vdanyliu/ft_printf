@@ -25,9 +25,13 @@ CMakeFiles/ft_printf.dir/pf_main.c.o: ../ft_printf.h
 CMakeFiles/ft_printf.dir/pf_main.c.o: ../libft/libft.h
 CMakeFiles/ft_printf.dir/pf_main.c.o: ../pf_main.c
 
-CMakeFiles/ft_printf.dir/pf_print_part_one.c.o: ../ft_printf.h
-CMakeFiles/ft_printf.dir/pf_print_part_one.c.o: ../libft/libft.h
-CMakeFiles/ft_printf.dir/pf_print_part_one.c.o: ../pf_print_part_one.c
+CMakeFiles/ft_printf.dir/pf_print_csp%.c.o: ../ft_printf.h
+CMakeFiles/ft_printf.dir/pf_print_csp%.c.o: ../libft/libft.h
+CMakeFiles/ft_printf.dir/pf_print_csp%.c.o: ../pf_print_csp%.c
+
+CMakeFiles/ft_printf.dir/pf_print_part_two.c.o: ../ft_printf.h
+CMakeFiles/ft_printf.dir/pf_print_part_two.c.o: ../libft/libft.h
+CMakeFiles/ft_printf.dir/pf_print_part_two.c.o: ../pf_print_part_two.c
 
 CMakeFiles/ft_printf.dir/pf_validator_part_1.c.o: ../ft_printf.h
 CMakeFiles/ft_printf.dir/pf_validator_part_1.c.o: ../libft/libft.h

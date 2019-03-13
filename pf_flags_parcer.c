@@ -60,8 +60,8 @@ void					pf_type_cs_flags(t_type *curr, char *str)
 	type_buff = curr;
 	while (*buff && pf_is_type(*buff) == 0)
 	{
-		if (*buff == 'l')
-			type_buff->spec = 1;
+//		if (*buff == 'l')
+//			type_buff->spec = 1;
 		buff++;
 	}
 }

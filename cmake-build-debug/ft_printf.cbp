@@ -335,7 +335,10 @@
 		<Unit filename="/Users/vdanyliu/Desktop/pftrintf/pf_main.c">
 			<Option target="ft_printf"/>
 		</Unit>
-		<Unit filename="/Users/vdanyliu/Desktop/pftrintf/pf_print_part_one.c">
+		<Unit filename="/Users/vdanyliu/Desktop/pftrintf/pf_print_csp%.c">
+			<Option target="ft_printf"/>
+		</Unit>
+		<Unit filename="/Users/vdanyliu/Desktop/pftrintf/pf_print_part_two.c">
 			<Option target="ft_printf"/>
 		</Unit>
 		<Unit filename="/Users/vdanyliu/Desktop/pftrintf/pf_validator_part_1.c">

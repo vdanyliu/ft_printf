@@ -31,7 +31,6 @@ int 	ft_printf(const char *format, ...)
 	ft_free_t_type(head);
 	free(format_buff);
 	va_end(ptr);
-	//system("leaks -q ft_printf");
 	return (g_len);
 }
 
@@ -40,15 +39,11 @@ int 	main(void)
 	unsigned long long int i;
 	char *str = "Hello world";
 	char *leak;
+	long long int j = -922;
 
-	//printf("He%cllo w%sr%0-10%ld\n", *str, str);
-	//i = ft_printf("He%cllo w%sr%-10%ld\n", *str, str);
-	//ft_putendl(leak = ft_itoa(i));
-	//free(leak);
-	//system("leaks -q ft_printf");
-	ft_printf("%10.0s\n", NULL);
-	printf("%10.0s\n", NULL);
-	ft_printf("a%20pa%20.4s\n", str, str);
+	ft_printf("%1.1d\n", j);
+	printf("%1.1d\n", j);
+
 	system("leaks -q ft_printf");
 	return (0);
 }
@@ -472,4 +467,3 @@ int 	main(void)
 //#endif
 //	return (0);
 //}
-

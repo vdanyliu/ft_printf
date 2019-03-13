@@ -2026,32 +2026,59 @@ pf_main.c.s:
 	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/pf_main.c.s
 .PHONY : pf_main.c.s
 
-pf_print_part_one.o: pf_print_part_one.c.o
+pf_print_csp%.o: pf_print_csp%.c.o
 
-.PHONY : pf_print_part_one.o
+.PHONY : pf_print_csp%.o
 
 # target to build an object file
-pf_print_part_one.c.o:
-	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/pf_print_part_one.c.o
-.PHONY : pf_print_part_one.c.o
+pf_print_csp%.c.o:
+	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/pf_print_csp%.c.o
+.PHONY : pf_print_csp%.c.o
 
-pf_print_part_one.i: pf_print_part_one.c.i
+pf_print_csp%.i: pf_print_csp%.c.i
 
-.PHONY : pf_print_part_one.i
+.PHONY : pf_print_csp%.i
 
 # target to preprocess a source file
-pf_print_part_one.c.i:
-	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/pf_print_part_one.c.i
-.PHONY : pf_print_part_one.c.i
+pf_print_csp%.c.i:
+	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/pf_print_csp%.c.i
+.PHONY : pf_print_csp%.c.i
 
-pf_print_part_one.s: pf_print_part_one.c.s
+pf_print_csp%.s: pf_print_csp%.c.s
 
-.PHONY : pf_print_part_one.s
+.PHONY : pf_print_csp%.s
 
 # target to generate assembly for a file
-pf_print_part_one.c.s:
-	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/pf_print_part_one.c.s
-.PHONY : pf_print_part_one.c.s
+pf_print_csp%.c.s:
+	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/pf_print_csp%.c.s
+.PHONY : pf_print_csp%.c.s
+
+pf_print_part_two.o: pf_print_part_two.c.o
+
+.PHONY : pf_print_part_two.o
+
+# target to build an object file
+pf_print_part_two.c.o:
+	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/pf_print_part_two.c.o
+.PHONY : pf_print_part_two.c.o
+
+pf_print_part_two.i: pf_print_part_two.c.i
+
+.PHONY : pf_print_part_two.i
+
+# target to preprocess a source file
+pf_print_part_two.c.i:
+	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/pf_print_part_two.c.i
+.PHONY : pf_print_part_two.c.i
+
+pf_print_part_two.s: pf_print_part_two.c.s
+
+.PHONY : pf_print_part_two.s
+
+# target to generate assembly for a file
+pf_print_part_two.c.s:
+	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/pf_print_part_two.c.s
+.PHONY : pf_print_part_two.c.s
 
 pf_validator_part_1.o: pf_validator_part_1.c.o
 
@@ -2327,9 +2354,12 @@ help:
 	@echo "... pf_main.o"
 	@echo "... pf_main.i"
 	@echo "... pf_main.s"
-	@echo "... pf_print_part_one.o"
-	@echo "... pf_print_part_one.i"
-	@echo "... pf_print_part_one.s"
+	@echo "... pf_print_csp%.o"
+	@echo "... pf_print_csp%.i"
+	@echo "... pf_print_csp%.s"
+	@echo "... pf_print_part_two.o"
+	@echo "... pf_print_part_two.i"
+	@echo "... pf_print_part_two.s"
 	@echo "... pf_validator_part_1.o"
 	@echo "... pf_validator_part_1.i"
 	@echo "... pf_validator_part_1.s"
