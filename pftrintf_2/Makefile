@@ -111,4 +111,3 @@ fclean: clean
 
 re: fclean all
 
-all: $(NAME)

@@ -24,14 +24,18 @@ char 		*pf_union(t_type *buff, char *str1, char *str2)
 	char 	*str2buff;
 
 	if (str1 == NULL)
+	{
+		if (*str2 != '-' && *str2 != '+' && (buff->type == 4 || buff->type == 5) && buff->flag->space == 1)
+			str2 = pf_add_one_space_before(str2);
 		return (str2);
+	}
 	i = ft_strlen(str1);
 	i += ft_strlen(str2);
 	res = (char*)malloc(sizeof(char) * (i + 1));
 	res_buff = res;
 	str1buff = str1;
 	str2buff = str2;
-	if (*str2 == '-' || *str2 == '+')
+	if ((*str2 == '-' || *str2 == '+') && *str1 == '0')
 		*res_buff++ = *str2buff++;
 	if (buff->flag->minus == 0)
 	{

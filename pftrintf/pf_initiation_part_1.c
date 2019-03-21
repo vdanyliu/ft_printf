@@ -28,7 +28,7 @@ int 	pf_type_group(int c)	//Return number of type group;
 		return (1);
 	if (c == 3)
 		return (2);
-	if (c >= 4 && c <= 9)
+	if ((c >= 4 && c <= 9))
 		return (3);
 	if (c == 100)
 		return (100);

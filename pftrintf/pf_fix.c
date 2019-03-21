@@ -58,19 +58,6 @@ char		*pf_accur_fixdiouxX(int i, char *str)
 	return (new_str);
 }
 
-char 		*pf_accur_oxX(int i, char *str)
-{
-	char *buff;
-	int j;
-	int plus_minus;
-	char *new_str;
-	char *new_str_buff;
-
-	if ((j = (ft_strlen(buff) - plus_minus)) >= i)
-		return (str);
-
-}
-
 char 					*pf_pointer_accur(int i, char *str)
 {
 	char	*buff;
@@ -96,4 +83,17 @@ char 					*pf_pointer_accur(int i, char *str)
 	free(str);
 	free(zero);
 	return (buff);
+}
+
+char 					*pf_add_one_space_before(char *str)
+{
+	char	*leak;
+	char 	*space;
+
+	space = ft_strdup(" ");
+	leak = str;
+	str = ft_strjoin(space, str);
+	free(leak);
+	free(space);
+	return (str);
 }

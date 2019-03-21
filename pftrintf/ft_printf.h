@@ -62,11 +62,11 @@ void					pf_print_csp(t_type *buff, va_list ptr);
 void					pf_print_diouxX(t_type *buff, va_list ptr);
 char 					*pf_spaces(t_type *buff, int i);
 char 					*pf_union(t_type *buff, char *str1, char *str2);
-char 					*pf_itoabase(signed long long int i, int base);
-char 					*pf_itoabaseun(unsigned long long int i, int base);
+char 					*pf_itoabase(long long i, int base);
+char 					*pf_itoabaseun(unsigned long long i, int base);
 char 					*pf_accur_fixdiouxX(int i, char *str);
 char 					*pf_plus_fix(char *str);
-char					*pf_accur_oxX(int i, char *str);
 char 					*pf_pointer_accur(int i, char *str);
+char 					*pf_add_one_space_before(char *str);
 
 #endif

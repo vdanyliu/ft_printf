@@ -10,7 +10,7 @@ static long double	pf_powun(int nbr, int pow)
 	return (res);
 }
 
-char						*pf_itoabase(signed long long int i, int base)
+char						*pf_itoabase(long long i, int base)
 {
 	char	*str;
 	int		j;
@@ -18,7 +18,7 @@ char						*pf_itoabase(signed long long int i, int base)
 
 	j = 1;
 	minus = 0;
-	if (i == -9223372036854775808)
+	if (i == -9223372036854775807 - 1)
 		return (ft_strdup("-9223372036854775808"));
 	if (i < 0)
 	{
@@ -38,7 +38,7 @@ char						*pf_itoabase(signed long long int i, int base)
 	return (str);
 }
 
-char						*pf_itoabaseun(unsigned long long int i, int base)
+char						*pf_itoabaseun(unsigned long long i, int base)
 {
 	char	*str;
 	int		j;

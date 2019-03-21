@@ -89,7 +89,7 @@ static void pf_print_pointer(t_type *buff, unsigned long long int j)
 void	pf_print_csp(t_type *buff, va_list ptr)
 {
 	if (buff->type == 1)
-		pf_print_char(buff, va_arg(ptr, char));
+		pf_print_char(buff, va_arg(ptr, int));
 	if (buff->type == 2)
 		pf_print_string(buff, va_arg(ptr, char*));
 	if (buff->type == 3)

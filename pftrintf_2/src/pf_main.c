@@ -34,21 +34,20 @@ int 	ft_printf(const char *format, ...)
 	return (g_len);
 }
 
-//int 	main(void)
+//int     main(void)
 //{
-//	unsigned long long int i;
-//	char *str = "hello word";
-//	char *leak;
-//	long long int j = -366;
+//    unsigned long long int i;
+//    char *str = "hello word";
+//    char *leak;
+//    intmax_t j = (18446744073709551615 / 1);
 //
-//	printf("|%40llx|\n", 9223372036854775807);
-//	ft_printf("|%40llx|\n", 9223372036854775807);
-//	ft_printf("|%40llx|\n", 9223372036854775807);
-//	printf("|%40llx|\n", 9223372036854775807);
+//    //printf("%C", 'c');
+//    //ft_printf("%c", 'c');
+//    ft_printf("|%ulld|\n", j);
+//    printf("|%ulld|\n", j);
 //
-//	return (0);
+//    return (0);
 //}
-
 
 //#include <stdio.h>
 //#include <stddef.h>
@@ -79,7 +78,7 @@ int 	ft_printf(const char *format, ...)
 //#define	PER			//aka percent(%)
 //#define	NUM			//aka numbers
 //#define	PTR			//aka pointers
-//#define	STRANGE		//aka undefined tests
+////#define	STRANGE		//aka undefined tests
 //#define STR			//aka strings
 //#define WSTR		//aka wide strings
 //#define	LENGTH		//aka hh, h, l ,ll , z, j
