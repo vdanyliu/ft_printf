@@ -32,7 +32,7 @@ char		*pf_accur_fixdiouxX(int i, char *str)
 
 	plus_minus = 0;
 	buff = str;
-	if (*buff == '-' || *buff == '+')
+	if (*buff == '-' || *buff == '+' || *buff == ' ')
 		plus_minus = 1;
 	if (i == 0 && *str == '0')
 	{
@@ -48,6 +48,7 @@ char		*pf_accur_fixdiouxX(int i, char *str)
 	{
 		*buff == '-' ? *new_str = '-' : 0;
 		*buff == '+' ? *new_str = '+' : 0;
+		*buff == ' ' ? *new_str = ' ' : 0;
 		new_str_buff++;
 	}
 	while (j != 0)
@@ -95,5 +96,35 @@ char 					*pf_add_one_space_before(char *str)
 	str = ft_strjoin(space, str);
 	free(leak);
 	free(space);
+	return (str);
+}
+
+char 					*pf_add_hash_flag(t_type *buff, char *str, int base)
+{
+	char *hesh;
+	char *leak;
+
+	hesh = NULL;
+	if (!*str && buff->type == 6)
+	{
+		free(str);
+		str = ft_strdup("0");
+		return (str);
+	}
+	if((*str == '0' && !*(str + 1)) || !*str)
+		return (str);
+	base == 16 ? hesh = ft_strdup("0x") : 0;
+	base == 8 ? hesh = ft_strdup("0") : 0;
+	if (hesh == NULL)
+		return (str);
+	if (base == 8 && *str == '0')
+	{
+		free(hesh);
+		return (str);
+	}
+	leak = str;
+	str = ft_strjoin(hesh, str);
+	free(hesh);
+	free(leak);
 	return (str);
 }

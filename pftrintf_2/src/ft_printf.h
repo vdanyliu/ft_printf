@@ -66,7 +66,10 @@ char 					*pf_itoabase(long long i, int base);
 char 					*pf_itoabaseun(unsigned long long i, int base);
 char 					*pf_accur_fixdiouxX(int i, char *str);
 char 					*pf_plus_fix(char *str);
+char 					*pf_space_fix(char *str);
 char 					*pf_pointer_accur(int i, char *str);
 char 					*pf_add_one_space_before(char *str);
+char 					*pf_add_hash_flag(t_type *buff, char *str, int base);
+void					pf_hesh_replace(char *str);
 
 #endif

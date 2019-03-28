@@ -19,6 +19,7 @@ int 	pf_is_type(char c)		//return number of type
 	c == 'x' ? ret = 8 : 0;
 	c == 'X' ? ret = 9 : 0;
 	c == '%' ? ret = 100 : 0;
+	c == 'U' ? ret = 17 : 0;
 	return (ret);
 }
 
@@ -28,7 +29,7 @@ int 	pf_type_group(int c)	//Return number of type group;
 		return (1);
 	if (c == 3)
 		return (2);
-	if ((c >= 4 && c <= 9))
+	if (((c >= 4 && c <= 9) || c == 17))
 		return (3);
 	if (c == 100)
 		return (100);

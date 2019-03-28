@@ -87,7 +87,8 @@ SRC =	src/pf_flag_lst_create.c\
 	src/ft_isspace.c\
 	src/get_next_line.c\
 	src/pf_itoabase.c\
-	src/free.c
+	src/free.c\
+	src/pf_fix_part_two.c
 	  
 OBJ		= $(patsubst src/%.c,obj/%.o,$(SRC))
 

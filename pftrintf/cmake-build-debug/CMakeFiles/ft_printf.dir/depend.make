@@ -9,6 +9,10 @@ CMakeFiles/ft_printf.dir/pf_fix.c.o: ../ft_printf.h
 CMakeFiles/ft_printf.dir/pf_fix.c.o: ../libft/libft.h
 CMakeFiles/ft_printf.dir/pf_fix.c.o: ../pf_fix.c
 
+CMakeFiles/ft_printf.dir/pf_fix_part_two.c.o: ../ft_printf.h
+CMakeFiles/ft_printf.dir/pf_fix_part_two.c.o: ../libft/libft.h
+CMakeFiles/ft_printf.dir/pf_fix_part_two.c.o: ../pf_fix_part_two.c
+
 CMakeFiles/ft_printf.dir/pf_flag_lst_create.c.o: ../ft_printf.h
 CMakeFiles/ft_printf.dir/pf_flag_lst_create.c.o: ../libft/libft.h
 CMakeFiles/ft_printf.dir/pf_flag_lst_create.c.o: ../pf_flag_lst_create.c

@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/ft_printf.dir/free.c.o"
   "CMakeFiles/ft_printf.dir/pf_fix.c.o"
+  "CMakeFiles/ft_printf.dir/pf_fix_part_two.c.o"
   "CMakeFiles/ft_printf.dir/pf_flag_lst_create.c.o"
   "CMakeFiles/ft_printf.dir/pf_flags_parcer.c.o"
   "CMakeFiles/ft_printf.dir/pf_initiation_part_1.c.o"

@@ -1918,6 +1918,33 @@ pf_fix.c.s:
 	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/pf_fix.c.s
 .PHONY : pf_fix.c.s
 
+pf_fix_part_two.o: pf_fix_part_two.c.o
+
+.PHONY : pf_fix_part_two.o
+
+# target to build an object file
+pf_fix_part_two.c.o:
+	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/pf_fix_part_two.c.o
+.PHONY : pf_fix_part_two.c.o
+
+pf_fix_part_two.i: pf_fix_part_two.c.i
+
+.PHONY : pf_fix_part_two.i
+
+# target to preprocess a source file
+pf_fix_part_two.c.i:
+	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/pf_fix_part_two.c.i
+.PHONY : pf_fix_part_two.c.i
+
+pf_fix_part_two.s: pf_fix_part_two.c.s
+
+.PHONY : pf_fix_part_two.s
+
+# target to generate assembly for a file
+pf_fix_part_two.c.s:
+	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/pf_fix_part_two.c.s
+.PHONY : pf_fix_part_two.c.s
+
 pf_flag_lst_create.o: pf_flag_lst_create.c.o
 
 .PHONY : pf_flag_lst_create.o
@@ -2369,6 +2396,9 @@ help:
 	@echo "... pf_fix.o"
 	@echo "... pf_fix.i"
 	@echo "... pf_fix.s"
+	@echo "... pf_fix_part_two.o"
+	@echo "... pf_fix_part_two.i"
+	@echo "... pf_fix_part_two.s"
 	@echo "... pf_flag_lst_create.o"
 	@echo "... pf_flag_lst_create.i"
 	@echo "... pf_flag_lst_create.s"

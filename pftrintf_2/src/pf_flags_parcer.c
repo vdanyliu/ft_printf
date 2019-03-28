@@ -17,6 +17,7 @@ void	pf_type_deafult_flags(t_type *curr, char *str)
 		*buff == '-' ? type_buff->flag->minus = 1 : 0;
 		*buff == '+' ? type_buff->flag->plus = 1 : 0;
 		*buff == ' ' ? type_buff->flag->space = 1 : 0;
+		*buff == '#' ? type_buff->flag->hesh = 1 : 0;
 		if (ft_isdigit(*buff) && *buff != '0' && *(buff - 1) != '.' && type_buff->width->width == 0)
 			type_buff->width->width = ft_atoi(buff);
 		buff++;
