@@ -1999,6 +1999,33 @@ pf_flags_parcer.c.s:
 	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/pf_flags_parcer.c.s
 .PHONY : pf_flags_parcer.c.s
 
+pf_float_print.o: pf_float_print.c.o
+
+.PHONY : pf_float_print.o
+
+# target to build an object file
+pf_float_print.c.o:
+	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/pf_float_print.c.o
+.PHONY : pf_float_print.c.o
+
+pf_float_print.i: pf_float_print.c.i
+
+.PHONY : pf_float_print.i
+
+# target to preprocess a source file
+pf_float_print.c.i:
+	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/pf_float_print.c.i
+.PHONY : pf_float_print.c.i
+
+pf_float_print.s: pf_float_print.c.s
+
+.PHONY : pf_float_print.s
+
+# target to generate assembly for a file
+pf_float_print.c.s:
+	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/pf_float_print.c.s
+.PHONY : pf_float_print.c.s
+
 pf_initiation_part_1.o: pf_initiation_part_1.c.o
 
 .PHONY : pf_initiation_part_1.o
@@ -2405,6 +2432,9 @@ help:
 	@echo "... pf_flags_parcer.o"
 	@echo "... pf_flags_parcer.i"
 	@echo "... pf_flags_parcer.s"
+	@echo "... pf_float_print.o"
+	@echo "... pf_float_print.i"
+	@echo "... pf_float_print.s"
 	@echo "... pf_initiation_part_1.o"
 	@echo "... pf_initiation_part_1.i"
 	@echo "... pf_initiation_part_1.s"

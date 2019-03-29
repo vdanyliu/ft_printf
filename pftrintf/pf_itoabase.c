@@ -1,6 +1,6 @@
 #include "ft_printf.h"
 
-static long double	pf_powun(int nbr, int pow)
+long double					pf_powun(int nbr, int pow)
 {
 	long double	res;
 

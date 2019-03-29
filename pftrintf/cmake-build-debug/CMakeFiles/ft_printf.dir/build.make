@@ -122,9 +122,22 @@ CMakeFiles/ft_printf.dir/pf_flags_parcer.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ft_printf.dir/pf_flags_parcer.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vdanyliu/Desktop/pftrintf/pf_flags_parcer.c -o CMakeFiles/ft_printf.dir/pf_flags_parcer.c.s
 
+CMakeFiles/ft_printf.dir/pf_float_print.c.o: CMakeFiles/ft_printf.dir/flags.make
+CMakeFiles/ft_printf.dir/pf_float_print.c.o: ../pf_float_print.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vdanyliu/Desktop/pftrintf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/ft_printf.dir/pf_float_print.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_printf.dir/pf_float_print.c.o   -c /Users/vdanyliu/Desktop/pftrintf/pf_float_print.c
+
+CMakeFiles/ft_printf.dir/pf_float_print.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ft_printf.dir/pf_float_print.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vdanyliu/Desktop/pftrintf/pf_float_print.c > CMakeFiles/ft_printf.dir/pf_float_print.c.i
+
+CMakeFiles/ft_printf.dir/pf_float_print.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ft_printf.dir/pf_float_print.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vdanyliu/Desktop/pftrintf/pf_float_print.c -o CMakeFiles/ft_printf.dir/pf_float_print.c.s
+
 CMakeFiles/ft_printf.dir/pf_initiation_part_1.c.o: CMakeFiles/ft_printf.dir/flags.make
 CMakeFiles/ft_printf.dir/pf_initiation_part_1.c.o: ../pf_initiation_part_1.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vdanyliu/Desktop/pftrintf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/ft_printf.dir/pf_initiation_part_1.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vdanyliu/Desktop/pftrintf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/ft_printf.dir/pf_initiation_part_1.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_printf.dir/pf_initiation_part_1.c.o   -c /Users/vdanyliu/Desktop/pftrintf/pf_initiation_part_1.c
 
 CMakeFiles/ft_printf.dir/pf_initiation_part_1.c.i: cmake_force
@@ -137,7 +150,7 @@ CMakeFiles/ft_printf.dir/pf_initiation_part_1.c.s: cmake_force
 
 CMakeFiles/ft_printf.dir/pf_itoabase.c.o: CMakeFiles/ft_printf.dir/flags.make
 CMakeFiles/ft_printf.dir/pf_itoabase.c.o: ../pf_itoabase.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vdanyliu/Desktop/pftrintf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/ft_printf.dir/pf_itoabase.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vdanyliu/Desktop/pftrintf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/ft_printf.dir/pf_itoabase.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_printf.dir/pf_itoabase.c.o   -c /Users/vdanyliu/Desktop/pftrintf/pf_itoabase.c
 
 CMakeFiles/ft_printf.dir/pf_itoabase.c.i: cmake_force
@@ -150,7 +163,7 @@ CMakeFiles/ft_printf.dir/pf_itoabase.c.s: cmake_force
 
 CMakeFiles/ft_printf.dir/pf_main.c.o: CMakeFiles/ft_printf.dir/flags.make
 CMakeFiles/ft_printf.dir/pf_main.c.o: ../pf_main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vdanyliu/Desktop/pftrintf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/ft_printf.dir/pf_main.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vdanyliu/Desktop/pftrintf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/ft_printf.dir/pf_main.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_printf.dir/pf_main.c.o   -c /Users/vdanyliu/Desktop/pftrintf/pf_main.c
 
 CMakeFiles/ft_printf.dir/pf_main.c.i: cmake_force
@@ -163,7 +176,7 @@ CMakeFiles/ft_printf.dir/pf_main.c.s: cmake_force
 
 CMakeFiles/ft_printf.dir/pf_print_csp%.c.o: CMakeFiles/ft_printf.dir/flags.make
 CMakeFiles/ft_printf.dir/pf_print_csp%.c.o: ../pf_print_csp%.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vdanyliu/Desktop/pftrintf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/ft_printf.dir/pf_print_csp%.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vdanyliu/Desktop/pftrintf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/ft_printf.dir/pf_print_csp%.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_printf.dir/pf_print_csp%.c.o   -c /Users/vdanyliu/Desktop/pftrintf/pf_print_csp%.c
 
 CMakeFiles/ft_printf.dir/pf_print_csp%.c.i: cmake_force
@@ -176,7 +189,7 @@ CMakeFiles/ft_printf.dir/pf_print_csp%.c.s: cmake_force
 
 CMakeFiles/ft_printf.dir/pf_print_part_two.c.o: CMakeFiles/ft_printf.dir/flags.make
 CMakeFiles/ft_printf.dir/pf_print_part_two.c.o: ../pf_print_part_two.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vdanyliu/Desktop/pftrintf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/ft_printf.dir/pf_print_part_two.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vdanyliu/Desktop/pftrintf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/ft_printf.dir/pf_print_part_two.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_printf.dir/pf_print_part_two.c.o   -c /Users/vdanyliu/Desktop/pftrintf/pf_print_part_two.c
 
 CMakeFiles/ft_printf.dir/pf_print_part_two.c.i: cmake_force
@@ -189,7 +202,7 @@ CMakeFiles/ft_printf.dir/pf_print_part_two.c.s: cmake_force
 
 CMakeFiles/ft_printf.dir/pf_validator_part_1.c.o: CMakeFiles/ft_printf.dir/flags.make
 CMakeFiles/ft_printf.dir/pf_validator_part_1.c.o: ../pf_validator_part_1.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vdanyliu/Desktop/pftrintf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/ft_printf.dir/pf_validator_part_1.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vdanyliu/Desktop/pftrintf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/ft_printf.dir/pf_validator_part_1.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_printf.dir/pf_validator_part_1.c.o   -c /Users/vdanyliu/Desktop/pftrintf/pf_validator_part_1.c
 
 CMakeFiles/ft_printf.dir/pf_validator_part_1.c.i: cmake_force
@@ -202,7 +215,7 @@ CMakeFiles/ft_printf.dir/pf_validator_part_1.c.s: cmake_force
 
 CMakeFiles/ft_printf.dir/pf_writer.c.o: CMakeFiles/ft_printf.dir/flags.make
 CMakeFiles/ft_printf.dir/pf_writer.c.o: ../pf_writer.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vdanyliu/Desktop/pftrintf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/ft_printf.dir/pf_writer.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vdanyliu/Desktop/pftrintf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/ft_printf.dir/pf_writer.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_printf.dir/pf_writer.c.o   -c /Users/vdanyliu/Desktop/pftrintf/pf_writer.c
 
 CMakeFiles/ft_printf.dir/pf_writer.c.i: cmake_force
@@ -220,6 +233,7 @@ ft_printf_OBJECTS = \
 "CMakeFiles/ft_printf.dir/pf_fix_part_two.c.o" \
 "CMakeFiles/ft_printf.dir/pf_flag_lst_create.c.o" \
 "CMakeFiles/ft_printf.dir/pf_flags_parcer.c.o" \
+"CMakeFiles/ft_printf.dir/pf_float_print.c.o" \
 "CMakeFiles/ft_printf.dir/pf_initiation_part_1.c.o" \
 "CMakeFiles/ft_printf.dir/pf_itoabase.c.o" \
 "CMakeFiles/ft_printf.dir/pf_main.c.o" \
@@ -236,6 +250,7 @@ ft_printf: CMakeFiles/ft_printf.dir/pf_fix.c.o
 ft_printf: CMakeFiles/ft_printf.dir/pf_fix_part_two.c.o
 ft_printf: CMakeFiles/ft_printf.dir/pf_flag_lst_create.c.o
 ft_printf: CMakeFiles/ft_printf.dir/pf_flags_parcer.c.o
+ft_printf: CMakeFiles/ft_printf.dir/pf_float_print.c.o
 ft_printf: CMakeFiles/ft_printf.dir/pf_initiation_part_1.c.o
 ft_printf: CMakeFiles/ft_printf.dir/pf_itoabase.c.o
 ft_printf: CMakeFiles/ft_printf.dir/pf_main.c.o
@@ -246,7 +261,7 @@ ft_printf: CMakeFiles/ft_printf.dir/pf_writer.c.o
 ft_printf: CMakeFiles/ft_printf.dir/build.make
 ft_printf: libft.a
 ft_printf: CMakeFiles/ft_printf.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/vdanyliu/Desktop/pftrintf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking C executable ft_printf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/vdanyliu/Desktop/pftrintf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Linking C executable ft_printf"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ft_printf.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

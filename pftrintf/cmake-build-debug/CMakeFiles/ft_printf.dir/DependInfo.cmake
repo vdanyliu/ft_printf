@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/vdanyliu/Desktop/pftrintf/pf_fix_part_two.c" "/Users/vdanyliu/Desktop/pftrintf/cmake-build-debug/CMakeFiles/ft_printf.dir/pf_fix_part_two.c.o"
   "/Users/vdanyliu/Desktop/pftrintf/pf_flag_lst_create.c" "/Users/vdanyliu/Desktop/pftrintf/cmake-build-debug/CMakeFiles/ft_printf.dir/pf_flag_lst_create.c.o"
   "/Users/vdanyliu/Desktop/pftrintf/pf_flags_parcer.c" "/Users/vdanyliu/Desktop/pftrintf/cmake-build-debug/CMakeFiles/ft_printf.dir/pf_flags_parcer.c.o"
+  "/Users/vdanyliu/Desktop/pftrintf/pf_float_print.c" "/Users/vdanyliu/Desktop/pftrintf/cmake-build-debug/CMakeFiles/ft_printf.dir/pf_float_print.c.o"
   "/Users/vdanyliu/Desktop/pftrintf/pf_initiation_part_1.c" "/Users/vdanyliu/Desktop/pftrintf/cmake-build-debug/CMakeFiles/ft_printf.dir/pf_initiation_part_1.c.o"
   "/Users/vdanyliu/Desktop/pftrintf/pf_itoabase.c" "/Users/vdanyliu/Desktop/pftrintf/cmake-build-debug/CMakeFiles/ft_printf.dir/pf_itoabase.c.o"
   "/Users/vdanyliu/Desktop/pftrintf/pf_main.c" "/Users/vdanyliu/Desktop/pftrintf/cmake-build-debug/CMakeFiles/ft_printf.dir/pf_main.c.o"

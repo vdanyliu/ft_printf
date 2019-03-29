@@ -71,5 +71,6 @@ char 					*pf_pointer_accur(int i, char *str);
 char 					*pf_add_one_space_before(char *str);
 char 					*pf_add_hash_flag(t_type *buff, char *str, int base);
 void					pf_hesh_replace(char *str);
+void					pf_bonus_rules(t_type *buff);
 
 #endif

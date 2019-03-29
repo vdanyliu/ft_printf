@@ -36,10 +36,21 @@ int 	ft_printf(const char *format, ...)
 
 int     main(void)
 {
+	//printf("34)\n{%.1f}\n", 3.25);
+	//printf("%.4f\n", 2.22286);
+//	printf("|%.2f|\n", 2.2551);
+//	ft_printf("|%.2f|\n", 2.2551);
+//	printf("38)\n{%f}\n", 2.050000001);
+//	ft_printf("{%f}\n\n", 2.050000001);
 
-	printf("|%-15.10i|\n", 402);
-	ft_printf("|%-15.10i|\n", 402);
-	ft_printf("%hU", 4294967296);
+//	printf("49)\n{%f}\n", 0.0/0.0);
+//	ft_printf("{%f}\n\n", 0.0/0.0);
+//
+	printf("50)\n{%f}\n", 3.0/0.0);
+	ft_printf("{%f}\n\n", 3.0/0.0);
+//
+//	printf("51)\n{%f}\n", -3.0/0.0);
+//	ft_printf("{%f}\n\n", -3.0/0.0);
     return (0);
 }
 
@@ -464,7 +475,7 @@ int     main(void)
 //}
 
 
-
+//
 //int		main(void)
 //{
 //	printf("************************** Start Of Undefined Behaviour Tests: *********************************\n");
@@ -1001,166 +1012,166 @@ int     main(void)
 //	printf("%c\n", NULL);
 //	ft_printf("%c\n\n", NULL);
 //
-//	printf("********************* NULL TESTS *******************************\n");
-//
-//	printf("1)\n");
-//	i = printf("orig:\"%d\"\n", 0);
-//	j = ft_printf("mine:\"%d\"\n", 0);
-//	printf("orig:%i\nmine:%i\n\n", i , j);
-//
-//	printf("2)\n");
-//	i = printf("orig:\"%.d\"\n", 0);
-//	j = ft_printf("mine:\"%.d\"\n", 0);
-//	printf("orig:%i\nmine:%i\n\n", i , j);
-//
-//	printf("3)\n");
-//	i = printf("orig:\"%.0d\"\n", 0);
-//	j = ft_printf("mine:\"%.0d\"\n", 0);
-//	printf("orig:%i\nmine:%i\n\n", i , j);
-//
-//	printf("4)\n");
-//	i = printf("orig:\"%10d\"\n", 0);
-//	j = ft_printf("mine:\"%10d\"\n", 0);
-//	printf("orig:%i\nmine:%i\n\n", i , j);
-//
-//	printf("5)\n");
-//	i = printf("orig:\"%10.d\"\n", 0);
-//	j = ft_printf("mine:\"%10.d\"\n", 0);
-//	printf("orig:%i\nmine:%i\n\n", i , j);
-//
-//	printf("6)\n");
-//	i = printf("orig:\"%-10.d\"\n", 0);
-//	j = ft_printf("mine:\"%-10.d\"\n", 0);
-//	printf("orig:%i\nmine:%i\n\n", i , j);
-//
-//	printf("7)\n");
-//	i = printf("orig:\"%-.d\"\n", 0);
-//	j = ft_printf("mine:\"%-.d\"\n", 0);
-//	printf("orig:%i\nmine:%i\n\n", i , j);
-//
-//	printf("8)\n");
-//	i = printf("orig:\"%-10.d\"\n", 0);
-//	j = ft_printf("mine:\"%-10.d\"\n", 0);
-//	printf("orig:%i\nmine:%i\n\n", i , j);
-//
-//	printf("9)\n");
-//	i = printf("orig:\"%10.d\"\n", 0);
-//	j = ft_printf("mine:\"%10.d\"\n", 0);
-//	printf("orig:%i\nmine:%i\n\n", i , j);
-//
-//	printf("9)\n");
-//	i = printf("orig:\"%10.2d\"\n", 0);
-//	j = ft_printf("mine:\"%10.2d\"\n", 0);
-//	printf("orig:%i\nmine:%i\n\n", i , j);
-//
-//	printf("10)\n");
-//	i = printf("orig:\"%-10.2d\"\n", 0);
-//	j = ft_printf("mine:\"%-10.2d\"\n", 0);
-//	printf("orig:%i\nmine:%i\n\n", i , j);
-//
-//	printf("11)\n");
-//	i = printf("orig:\"%0.d\"\n", 0);
-//	j = ft_printf("mine:\"%0.d\"\n", 0);
-//	printf("orig:%i\nmine:%i\n\n", i , j);
-//
-//	printf("12)\n");
-//	i = printf("orig:\"%x\"\n", 0);
-//	j = ft_printf("mine:\"%x\"\n", 0);
-//	printf("orig:%i\nmine:%i\n\n", i , j);
-//
-//	printf("13)\n");
-//	i = printf("orig:\"%.x\"\n", 0);
-//	j = ft_printf("mine:\"%.x\"\n", 0);
-//	printf("orig:%i\nmine:%i\n\n", i , j);
-//
-//	printf("14)\n");
-//	i = printf("orig:\"%.0x\"\n", 0);
-//	j = ft_printf("mine:\"%.0x\"\n", 0);
-//	printf("orig:%i\nmine:%i\n\n", i , j);
-//
-//	printf("15)\n");
-//	i = printf("orig:\"%x\"\n", 0);
-//	j = ft_printf("mine:\"%x\"\n", 0);
-//	printf("orig:%i\nmine:%i\n\n", i , j);
-//
-//	printf("16)\n");
-//	i = printf("orig:\"%10.x\"\n", 0);
-//	j = ft_printf("mine:\"%10.x\"\n", 0);
-//	printf("orig:%i\nmine:%i\n\n", i , j);
-//
-//	printf("17)\n");
-//	i = printf("orig:\"%-10.x\"\n", 0);
-//	j = ft_printf("mine:\"%-10.x\"\n", 0);
-//	printf("orig:%i\nmine:%i\n\n", i , j);
-//
-//	printf("18)\n");
-//	i = printf("orig:\"%-.x\"\n", 0);
-//	j = ft_printf("mine:\"%-.x\"\n", 0);
-//	printf("orig:%i\nmine:%i\n\n", i , j);
-//
-//	printf("19)\n");
-//	i = printf("orig:\"%-10.x\"\n", 0);
-//	j = ft_printf("mine:\"%-10.x\"\n", 0);
-//	printf("orig:%i\nmine:%i\n\n", i , j);
-//
-//	printf("20)\n");
-//	i = printf("orig:\"%10.x\"\n", 0);
-//	j = ft_printf("mine:\"%10.x\"\n", 0);
-//	printf("orig:%i\nmine:%i\n\n", i , j);
-//
-//	printf("21)\n");
-//	i = printf("orig:\"%10.2x\"\n", 0);
-//	j = ft_printf("mine:\"%10.2x\"\n", 0);
-//	printf("orig:%i\nmine:%i\n\n", i , j);
-//
-//	printf("22)\n");
-//	i = printf("orig:\"%-10.2x\"\n", 0);
-//	j = ft_printf("mine:\"%-10.2x\"\n", 0);
-//	printf("orig:%i\nmine:%i\n\n", i , j);
-//
-//	printf("23)\n");
-//	i = printf("orig:\"%0.x\"\n", 0);
-//	j = ft_printf("mine:\"%0.x\"\n", 0);
-//	printf("orig:%i\nmine:%i\n\n", i , j);
-//
-//	printf("%o\n", 0);
-//	ft_printf("%o\n\n", 0);
-//
-//	printf("%#o\n", 0);
-//	ft_printf("%#o\n\n", 0);
-//
-//	printf("%#10.o\n", 0);
-//	ft_printf("%#10.o\n\n", 0);
-//
-//	printf("%#10o\n", 0);
-//	ft_printf("%#10o\n\n", 0);
-//
-//	printf("%#-10o\n", 0);
-//	ft_printf("%#-10o\n\n", 0);
-//
-//	printf("@moulitest: %.o %.0o\n", 0, 0);
-//	ft_printf("@moulitest: %.o %.0o\n\n", 0, 0);
-//
-//	printf("{%*%}\n", -15);
-//	ft_printf("{%*%}\n\n", -15);
-//
-//	printf("{%*d}\n", -5, 42);
-//	ft_printf("{%*d}\n\n", -5, 42);
-//
-//	printf("{%.*s}\n", -5, "42");
-//	ft_printf("{%.*s}\n\n", -5, "42");
-//
-//	printf("%*d\n", 5, 42);
-//	ft_printf("%*d\n", 5, 42);
-//
-//	printf("{%*.3s}\n", 3, "Hello");
-//	ft_printf("{%*.3s}\n", 3, "Hello");
-//
-//	printf("@moulitest: %#.x %#.0x\n", 0, 0);
-//	ft_printf("@moulitest: %#.x %#.0x\n", 0, 0);
-//
-//	printf("\n%#-30x\n", 40);
-//	ft_printf("%#-30x\n\n", 40);
+////	printf("********************* NULL TESTS *******************************\n");
+////
+////	printf("1)\n");
+////	i = printf("orig:\"%d\"\n", 0);
+////	j = ft_printf("mine:\"%d\"\n", 0);
+////	printf("orig:%i\nmine:%i\n\n", i , j);
+////
+////	printf("2)\n");
+////	i = printf("orig:\"%.d\"\n", 0);
+////	j = ft_printf("mine:\"%.d\"\n", 0);
+////	printf("orig:%i\nmine:%i\n\n", i , j);
+////
+////	printf("3)\n");
+////	i = printf("orig:\"%.0d\"\n", 0);
+////	j = ft_printf("mine:\"%.0d\"\n", 0);
+////	printf("orig:%i\nmine:%i\n\n", i , j);
+////
+////	printf("4)\n");
+////	i = printf("orig:\"%10d\"\n", 0);
+////	j = ft_printf("mine:\"%10d\"\n", 0);
+////	printf("orig:%i\nmine:%i\n\n", i , j);
+////
+////	printf("5)\n");
+////	i = printf("orig:\"%10.d\"\n", 0);
+////	j = ft_printf("mine:\"%10.d\"\n", 0);
+////	printf("orig:%i\nmine:%i\n\n", i , j);
+////
+////	printf("6)\n");
+////	i = printf("orig:\"%-10.d\"\n", 0);
+////	j = ft_printf("mine:\"%-10.d\"\n", 0);
+////	printf("orig:%i\nmine:%i\n\n", i , j);
+////
+////	printf("7)\n");
+////	i = printf("orig:\"%-.d\"\n", 0);
+////	j = ft_printf("mine:\"%-.d\"\n", 0);
+////	printf("orig:%i\nmine:%i\n\n", i , j);
+////
+////	printf("8)\n");
+////	i = printf("orig:\"%-10.d\"\n", 0);
+////	j = ft_printf("mine:\"%-10.d\"\n", 0);
+////	printf("orig:%i\nmine:%i\n\n", i , j);
+////
+////	printf("9)\n");
+////	i = printf("orig:\"%10.d\"\n", 0);
+////	j = ft_printf("mine:\"%10.d\"\n", 0);
+////	printf("orig:%i\nmine:%i\n\n", i , j);
+////
+////	printf("9)\n");
+////	i = printf("orig:\"%10.2d\"\n", 0);
+////	j = ft_printf("mine:\"%10.2d\"\n", 0);
+////	printf("orig:%i\nmine:%i\n\n", i , j);
+////
+////	printf("10)\n");
+////	i = printf("orig:\"%-10.2d\"\n", 0);
+////	j = ft_printf("mine:\"%-10.2d\"\n", 0);
+////	printf("orig:%i\nmine:%i\n\n", i , j);
+////
+////	printf("11)\n");
+////	i = printf("orig:\"%0.d\"\n", 0);
+////	j = ft_printf("mine:\"%0.d\"\n", 0);
+////	printf("orig:%i\nmine:%i\n\n", i , j);
+////
+////	printf("12)\n");
+////	i = printf("orig:\"%x\"\n", 0);
+////	j = ft_printf("mine:\"%x\"\n", 0);
+////	printf("orig:%i\nmine:%i\n\n", i , j);
+////
+////	printf("13)\n");
+////	i = printf("orig:\"%.x\"\n", 0);
+////	j = ft_printf("mine:\"%.x\"\n", 0);
+////	printf("orig:%i\nmine:%i\n\n", i , j);
+////
+////	printf("14)\n");
+////	i = printf("orig:\"%.0x\"\n", 0);
+////	j = ft_printf("mine:\"%.0x\"\n", 0);
+////	printf("orig:%i\nmine:%i\n\n", i , j);
+////
+////	printf("15)\n");
+////	i = printf("orig:\"%x\"\n", 0);
+////	j = ft_printf("mine:\"%x\"\n", 0);
+////	printf("orig:%i\nmine:%i\n\n", i , j);
+////
+////	printf("16)\n");
+////	i = printf("orig:\"%10.x\"\n", 0);
+////	j = ft_printf("mine:\"%10.x\"\n", 0);
+////	printf("orig:%i\nmine:%i\n\n", i , j);
+////
+////	printf("17)\n");
+////	i = printf("orig:\"%-10.x\"\n", 0);
+////	j = ft_printf("mine:\"%-10.x\"\n", 0);
+////	printf("orig:%i\nmine:%i\n\n", i , j);
+////
+////	printf("18)\n");
+////	i = printf("orig:\"%-.x\"\n", 0);
+////	j = ft_printf("mine:\"%-.x\"\n", 0);
+////	printf("orig:%i\nmine:%i\n\n", i , j);
+////
+////	printf("19)\n");
+////	i = printf("orig:\"%-10.x\"\n", 0);
+////	j = ft_printf("mine:\"%-10.x\"\n", 0);
+////	printf("orig:%i\nmine:%i\n\n", i , j);
+////
+////	printf("20)\n");
+////	i = printf("orig:\"%10.x\"\n", 0);
+////	j = ft_printf("mine:\"%10.x\"\n", 0);
+////	printf("orig:%i\nmine:%i\n\n", i , j);
+////
+////	printf("21)\n");
+////	i = printf("orig:\"%10.2x\"\n", 0);
+////	j = ft_printf("mine:\"%10.2x\"\n", 0);
+////	printf("orig:%i\nmine:%i\n\n", i , j);
+////
+////	printf("22)\n");
+////	i = printf("orig:\"%-10.2x\"\n", 0);
+////	j = ft_printf("mine:\"%-10.2x\"\n", 0);
+////	printf("orig:%i\nmine:%i\n\n", i , j);
+////
+////	printf("23)\n");
+////	i = printf("orig:\"%0.x\"\n", 0);
+////	j = ft_printf("mine:\"%0.x\"\n", 0);
+////	printf("orig:%i\nmine:%i\n\n", i , j);
+////
+////	printf("%o\n", 0);
+////	ft_printf("%o\n\n", 0);
+////
+////	printf("%#o\n", 0);
+////	ft_printf("%#o\n\n", 0);
+////
+////	printf("%#10.o\n", 0);
+////	ft_printf("%#10.o\n\n", 0);
+////
+////	printf("%#10o\n", 0);
+////	ft_printf("%#10o\n\n", 0);
+////
+////	printf("%#-10o\n", 0);
+////	ft_printf("%#-10o\n\n", 0);
+////
+////	printf("@moulitest: %.o %.0o\n", 0, 0);
+////	ft_printf("@moulitest: %.o %.0o\n\n", 0, 0);
+////
+////	printf("{%*%}\n", -15);
+////	ft_printf("{%*%}\n\n", -15);
+////
+////	printf("{%*d}\n", -5, 42);
+////	ft_printf("{%*d}\n\n", -5, 42);
+////
+////	printf("{%.*s}\n", -5, "42");
+////	ft_printf("{%.*s}\n\n", -5, "42");
+////
+////	printf("%*d\n", 5, 42);
+////	ft_printf("%*d\n", 5, 42);
+////
+////	printf("{%*.3s}\n", 3, "Hello");
+////	ft_printf("{%*.3s}\n", 3, "Hello");
+////
+////	printf("@moulitest: %#.x %#.0x\n", 0, 0);
+////	ft_printf("@moulitest: %#.x %#.0x\n", 0, 0);
+////
+////	printf("\n%#-30x\n", 40);
+////	ft_printf("%#-30x\n\n", 40);
 //
 //	printf("* ************** END OF NULL TESTS ************************* *\n\n\n");
 //	printf("* **************** FLOAT TESTS ***************************** *\n");
@@ -1255,8 +1266,8 @@ int     main(void)
 //	printf("27)\n{%-+20.200f}\n", -42.42);
 //	ft_printf("{%-+20.200f}\n\n", -42.42);
 //
-//	printf("28)\n{%+020.200f}\n", -42.42);
-//	ft_printf("{%+020.200f}\n\n", -42.42);
+//	printf("28)\n{%+20.200f}\n", -42.42);
+//	ft_printf("{%+20.200f}\n\n", -42.42);
 //
 //	printf("29)\n{%10f}\n", -42.42);
 //	ft_printf("{%10f}\n\n", -42.42);
@@ -1334,46 +1345,46 @@ int     main(void)
 //	printf("51)\n{%f}\n", -3.0/0.0);
 //	ft_printf("{%f}\n\n", -3.0/0.0);
 //
-//	printf("* ****************************** BONUSES ****************************** *\n");
-//
-//	printf("52)\n{%F}\n", -3.0/0.0);
-//	ft_printf("{%F}\n\n", -3.0/0.0);
-//
-//	printf("53)\n{%F}\n", 3.0/0.0);
-//	ft_printf("{%F}\n\n", 3.0/0.0);
-//
-//	printf("54)\n{%F}\n", 0.0/0.0);
-//	ft_printf("{%F}\n\n", 0.0/0.0);
-//
-//	ft_printf("{%r}\n", "hello\n again\t!");
-//	ft_printf("vitya---> %r\n", "Hello my\n guests");
-//	ft_printf("{% 10b}\n\n", 23534523452);
-//
-//	int counter;
-//	counter = ft_printf("{red}%s{eoc}{green} And this is green!\n{eoc}And where the Fuck have you all been?\n{cyan}Do you know - this color's \"Cyan\"?\n{eoc}{yellow}Checking yellow!{eoc} {blue}Blue is fine!{eoc}\n{purple}And purple's nice!{eoc} That's it - I'm done!\n", "This color's red!");
-//	printf("%i\n", counter);
-//	printf("{%f}{%F}\n", 1.42, 1.42);
-//	ft_printf("{%f}{%F}\n\n", 1.42, 1.42);
-//
-//	printf("{%f}{%F}\n", -1.42, -1.42);
-//	ft_printf("{%f}{%F}\n\n", -1.42, -1.42);
-//
-//	printf("{%f}{%F}\n", 1444565444646.6465424242242, 1444565444646.6465424242242);
-//	ft_printf("{%f}{%F}\n\n", 1444565444646.6465424242242, 1444565444646.6465424242242);
-//
-//	printf("{%f}{%F}\n", -1444565444646.6465424242242454654, -1444565444646.6465424242242454654);
-//	ft_printf("{%f}{%F}\n", -1444565444646.6465424242242454654, -1444565444646.6465424242242454654);
-//
-//	ft_printf("1mo{%o}\n", 40);printf("1oo{%o}\n", 40);
-//	ft_printf("2m5o{%5o}\n", 41);printf("2o5o{%5o}\n", 41);
-//	ft_printf("3m{%05o}\n", 42);printf("3o{%05o}\n", 42);
-//	ft_printf("4m{%-5o}\n", 2500);printf("4o{%-5o}\n", 2500);
-//	ft_printf("5m{%#6o}\n", 2500);printf("5o{%#6o}\n", 2500);
-//	ft_printf("6m{%-#6o}\n", 2500); printf("6o{%-#6o}\n", 2500);
-//	ft_printf("7m{%-05o}\n", 2500);printf("7o{%-05o}\n", 2500);
-//	ft_printf("8m{%-5.10o}\n", 2500); printf("8o{%-5.10o}\n", 2500);
-//	ft_printf("9m{%-10.5o}\n", 2500); printf("9o{%-10.5o}\n", 2500);
-//	//ft_printf("%hU", 4294967296);
+////	printf("* ****************************** BONUSES ****************************** *\n");
+////
+////	printf("52)\n{%F}\n", -3.0/0.0);
+////	ft_printf("{%F}\n\n", -3.0/0.0);
+////
+////	printf("53)\n{%F}\n", 3.0/0.0);
+////	ft_printf("{%F}\n\n", 3.0/0.0);
+////
+////	printf("54)\n{%F}\n", 0.0/0.0);
+////	ft_printf("{%F}\n\n", 0.0/0.0);
+////
+////	ft_printf("{%r}\n", "hello\n again\t!");
+////	ft_printf("vitya---> %r\n", "Hello my\n guests");
+////	ft_printf("{% 10b}\n\n", 23534523452);
+////
+////	int counter;
+////	counter = ft_printf("{red}%s{eoc}{green} And this is green!\n{eoc}And where the Fuck have you all been?\n{cyan}Do you know - this color's \"Cyan\"?\n{eoc}{yellow}Checking yellow!{eoc} {blue}Blue is fine!{eoc}\n{purple}And purple's nice!{eoc} That's it - I'm done!\n", "This color's red!");
+////	printf("%i\n", counter);
+////	printf("{%f}{%F}\n", 1.42, 1.42);
+////	ft_printf("{%f}{%F}\n\n", 1.42, 1.42);
+////
+////	printf("{%f}{%F}\n", -1.42, -1.42);
+////	ft_printf("{%f}{%F}\n\n", -1.42, -1.42);
+////
+////	printf("{%f}{%F}\n", 1444565444646.6465424242242, 1444565444646.6465424242242);
+////	ft_printf("{%f}{%F}\n\n", 1444565444646.6465424242242, 1444565444646.6465424242242);
+////
+////	printf("{%f}{%F}\n", -1444565444646.6465424242242454654, -1444565444646.6465424242242454654);
+////	ft_printf("{%f}{%F}\n", -1444565444646.6465424242242454654, -1444565444646.6465424242242454654);
+////
+////	ft_printf("1mo{%o}\n", 40);printf("1oo{%o}\n", 40);
+////	ft_printf("2m5o{%5o}\n", 41);printf("2o5o{%5o}\n", 41);
+////	ft_printf("3m{%05o}\n", 42);printf("3o{%05o}\n", 42);
+////	ft_printf("4m{%-5o}\n", 2500);printf("4o{%-5o}\n", 2500);
+////	ft_printf("5m{%#6o}\n", 2500);printf("5o{%#6o}\n", 2500);
+////	ft_printf("6m{%-#6o}\n", 2500); printf("6o{%-#6o}\n", 2500);
+////	ft_printf("7m{%-05o}\n", 2500);printf("7o{%-05o}\n", 2500);
+////	ft_printf("8m{%-5.10o}\n", 2500); printf("8o{%-5.10o}\n", 2500);
+////	ft_printf("9m{%-10.5o}\n", 2500); printf("9o{%-10.5o}\n", 2500);
+////	//ft_printf("%hU", 4294967296);
 //
 //	system("leaks -q ft_printf");
 //	return (0);

@@ -21,6 +21,10 @@ CMakeFiles/ft_printf.dir/pf_flags_parcer.c.o
  /Users/vdanyliu/Desktop/pftrintf/ft_printf.h
  /Users/vdanyliu/Desktop/pftrintf/libft/libft.h
  /Users/vdanyliu/Desktop/pftrintf/pf_flags_parcer.c
+CMakeFiles/ft_printf.dir/pf_float_print.c.o
+ /Users/vdanyliu/Desktop/pftrintf/ft_printf.h
+ /Users/vdanyliu/Desktop/pftrintf/libft/libft.h
+ /Users/vdanyliu/Desktop/pftrintf/pf_float_print.c
 CMakeFiles/ft_printf.dir/pf_initiation_part_1.c.o
  /Users/vdanyliu/Desktop/pftrintf/ft_printf.h
  /Users/vdanyliu/Desktop/pftrintf/libft/libft.h

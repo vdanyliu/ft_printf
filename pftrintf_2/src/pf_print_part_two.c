@@ -92,11 +92,6 @@ void					pf_print_diouxX(t_type *buff, va_list ptr)
 {
 	if (buff->accur->number != -1)
 		buff->flag->zero = 0;
-	if (buff->type == 17)
-	{
-		buff->type = 7;
-		buff->spec = 4;
-	}
 	if (buff->type == 4 || buff->type == 5)
 		pf_print_dexs(buff, va_arg(ptr, long long));
 	if (buff->type == 7)

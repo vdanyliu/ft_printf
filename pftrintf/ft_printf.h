@@ -44,6 +44,12 @@ typedef struct			s_type
 	struct s_type		*next;
 }						t_type;
 
+typedef struct			s_float
+{
+	char 				*whole;
+	char 				*rest;
+}						t_float;
+
 int						g_len;
 int						pf_any_procent(char *str);
 void					pf_type_initiation(t_type **head, char *format);
@@ -71,5 +77,8 @@ char 					*pf_pointer_accur(int i, char *str);
 char 					*pf_add_one_space_before(char *str);
 char 					*pf_add_hash_flag(t_type *buff, char *str, int base);
 void					pf_hesh_replace(char *str);
+void					pf_bonus_rules(t_type *buff);
+void					pf_print_float(t_type *buff, double num);
+long double				pf_powun(int nbr, int pow);
 
 #endif

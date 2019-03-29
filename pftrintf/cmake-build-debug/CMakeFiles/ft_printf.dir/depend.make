@@ -21,6 +21,10 @@ CMakeFiles/ft_printf.dir/pf_flags_parcer.c.o: ../ft_printf.h
 CMakeFiles/ft_printf.dir/pf_flags_parcer.c.o: ../libft/libft.h
 CMakeFiles/ft_printf.dir/pf_flags_parcer.c.o: ../pf_flags_parcer.c
 
+CMakeFiles/ft_printf.dir/pf_float_print.c.o: ../ft_printf.h
+CMakeFiles/ft_printf.dir/pf_float_print.c.o: ../libft/libft.h
+CMakeFiles/ft_printf.dir/pf_float_print.c.o: ../pf_float_print.c
+
 CMakeFiles/ft_printf.dir/pf_initiation_part_1.c.o: ../ft_printf.h
 CMakeFiles/ft_printf.dir/pf_initiation_part_1.c.o: ../libft/libft.h
 CMakeFiles/ft_printf.dir/pf_initiation_part_1.c.o: ../pf_initiation_part_1.c

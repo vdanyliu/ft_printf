@@ -41,3 +41,14 @@ char 					*pf_space_fix(char *str)
 	free (str);
 	return (new_str);
 }
+
+void					pf_bonus_rules(t_type *buff)
+{
+	if (buff->flag->minus)
+		buff->flag->zero = 0;
+	if (buff->type > 10 && buff->type <= 20)
+	{
+		buff->type = buff->type - 10;
+		buff->spec = 4;
+	}
+}

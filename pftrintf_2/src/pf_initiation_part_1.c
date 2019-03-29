@@ -9,7 +9,7 @@ int 	pf_is_type(char c)		//return number of type
 	int ret;
 
 	ret = 0;
-	c == 'c' ? ret = 1 : 0;
+	(c == 'c' || c == 'C') ? ret = 1 : 0;
 	c == 's' ? ret = 2 : 0;
 	c == 'p' ? ret = 3 : 0;
 	c == 'd' ? ret = 4 : 0;
@@ -20,6 +20,8 @@ int 	pf_is_type(char c)		//return number of type
 	c == 'X' ? ret = 9 : 0;
 	c == '%' ? ret = 100 : 0;
 	c == 'U' ? ret = 17 : 0;
+	c == 'D' ? ret = 14 : 0;
+	c == 'I' ? ret = 14 : 0;
 	return (ret);
 }
 
@@ -57,7 +59,7 @@ void	pf_parce_flag(t_type *buff, char *str)		//Записывает флаги �
 	int i;
 
 	i = pf_type_group(buff->type);
-	while (*str &&pf_is_type(*str) == 0)
+	while (*str && pf_is_type(*str) == 0)
 	{
 		pf_type_deafult_flags(buff, str);
 		pf_type_cs_flags(buff, str);
@@ -87,6 +89,7 @@ void	pf_type_initiation(t_type **head, char *format)
 			while (buff_begin != buff_end)
 				pf_parce_flag(type_buff, buff_begin++);
 			buff_begin++;
+			pf_bonus_rules(type_buff);
 		}
 		else
 			buff_begin++;

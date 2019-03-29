@@ -332,6 +332,9 @@
 		<Unit filename="/Users/vdanyliu/Desktop/pftrintf/pf_flags_parcer.c">
 			<Option target="ft_printf"/>
 		</Unit>
+		<Unit filename="/Users/vdanyliu/Desktop/pftrintf/pf_float_print.c">
+			<Option target="ft_printf"/>
+		</Unit>
 		<Unit filename="/Users/vdanyliu/Desktop/pftrintf/pf_initiation_part_1.c">
 			<Option target="ft_printf"/>
 		</Unit>

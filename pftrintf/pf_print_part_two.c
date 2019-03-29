@@ -80,10 +80,10 @@ static void				pf_print_ox(t_type *buff, unsigned long long j)
 	str1 = pf_spaces(buff, (buff->width->width - ft_strlen(str2)));
 	buff->type == 9 ? str2 = pf_low_to_up_case(str2) : 0;
 	str1 = pf_union(buff, str1, str2);
-	i = ft_strlen(str1);
-	g_len += i;
 	(buff->flag->hesh == 1 && (buff->type == 8 || buff->type == 9))
 	&& buff->flag->zero == 1 ? pf_hesh_replace(str1) : 0;
+	i = ft_strlen(str1);
+	g_len += i;
 	write(1, str1, i);
 	free(str1);
 }
@@ -92,11 +92,6 @@ void					pf_print_diouxX(t_type *buff, va_list ptr)
 {
 	if (buff->accur->number != -1)
 		buff->flag->zero = 0;
-	if (buff->type == 17)
-	{
-		buff->type = 7;
-		buff->spec = 4;
-	}
 	if (buff->type == 4 || buff->type == 5)
 		pf_print_dexs(buff, va_arg(ptr, long long));
 	if (buff->type == 7)
