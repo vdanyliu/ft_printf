@@ -3,8 +3,8 @@
 static void				pf_print_dexs(t_type *buff, long long int j)
 {
 	char	*str1;
-	char 	*str2;
-	size_t 	i;
+	char	*str2;
+	size_t	i;
 
 	buff->spec == 1 ? str2 = pf_itoabase((signed short)j, 10) : 0;
 	buff->spec == 2 ? str2 = pf_itoabase((signed char)j, 10) : 0;
@@ -27,8 +27,8 @@ static void				pf_print_dexs(t_type *buff, long long int j)
 static void				pf_print_dexuns(t_type *buff, unsigned long long j)
 {
 	char	*str1;
-	char 	*str2;
-	size_t 	i;
+	char	*str2;
+	size_t	i;
 
 	buff->spec == 1 ? str2 = pf_itoabaseun((unsigned short)j, 10) : 0;
 	buff->spec == 2 ? str2 = pf_itoabaseun((unsigned char)j, 10) : 0;
@@ -46,7 +46,7 @@ static void				pf_print_dexuns(t_type *buff, unsigned long long j)
 	free(str1);
 }
 
-static char 			*pf_low_to_up_case(char *str)
+static char				*pf_low_to_up_case(char *str)
 {
 	char	*buff;
 
@@ -63,9 +63,9 @@ static char 			*pf_low_to_up_case(char *str)
 static void				pf_print_ox(t_type *buff, unsigned long long j)
 {
 	char	*str1;
-	char 	*str2;
-	size_t 	i;
-	int 	base;
+	char	*str2;
+	size_t	i;
+	int		base;
 
 	base = buff->type == 6 ? 8 : 16;
 	buff->spec == 1 ? str2 = pf_itoabaseun((unsigned short)j, base) : 0;
@@ -76,7 +76,7 @@ static void				pf_print_ox(t_type *buff, unsigned long long j)
 	buff->spec == 5 ? str2 = pf_itoabaseun((uintmax_t)j, base) : 0;
 	buff->spec == 6 ? str2 = pf_itoabaseun((size_t)j, base) : 0;
 	str2 = pf_accur_fixdiouxX(buff->accur->number, str2);
-	buff->flag->hesh ? str2 = pf_add_hash_flag(buff, str2, base): 0;
+	buff->flag->hesh ? str2 = pf_add_hash_flag(buff, str2, base) : 0;
 	str1 = pf_spaces(buff, (buff->width->width - ft_strlen(str2)));
 	buff->type == 9 ? str2 = pf_low_to_up_case(str2) : 0;
 	str1 = pf_union(buff, str1, str2);

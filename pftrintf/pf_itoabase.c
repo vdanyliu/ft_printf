@@ -14,7 +14,7 @@ char						*pf_itoabase(long long i, int base)
 {
 	char	*str;
 	int		j;
-	int 	minus;
+	int		minus;
 
 	j = 1;
 	minus = 0;

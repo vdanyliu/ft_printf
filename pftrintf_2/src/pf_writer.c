@@ -1,6 +1,4 @@
-//
-// Created by Volodymyr DANYLIUK on 2019-03-06.
-//
+
 #include "ft_printf.h"
 
 void 					pf_write_and_remalloc(char **str)
@@ -33,6 +31,10 @@ void					pf_write_flag(va_list ptr, t_type **lst)
 	i == 100 ? pf_print_procent(buff) : 0;
 	(i == 1 || i == 2) ? pf_print_csp(buff, ptr) : 0;
 	(i == 3) ? pf_print_diouxX(buff, ptr) : 0;
+	if (i == 10)
+	{
+		buff->spec == 3 ? pf_print_float(buff, va_arg(ptr,long double)) : pf_print_float(buff, va_arg(ptr, double));
+	}
 	*lst = (*lst)->next;
 }
 
@@ -60,4 +62,15 @@ void 					pf_skip_flag_remalloc(char **str)
 		free(*str);
 		*str = ft_strdup("");
 	}
+}
+
+int 					pf_is_zero(char *str)
+{
+	while (*str)
+	{
+		if (*str != '0')
+			return (0);
+		str++;
+	}
+	return (1);
 }

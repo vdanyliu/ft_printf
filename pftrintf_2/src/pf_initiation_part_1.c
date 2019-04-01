@@ -1,10 +1,7 @@
-//
-// Created by Volodymyr DANYLIUK on 2019-03-01.
-//
 
 #include "ft_printf.h"
 
-int 	pf_is_type(char c)		//return number of type
+int				pf_is_type(char c)
 {
 	int ret;
 
@@ -22,10 +19,11 @@ int 	pf_is_type(char c)		//return number of type
 	c == 'U' ? ret = 17 : 0;
 	c == 'D' ? ret = 14 : 0;
 	c == 'I' ? ret = 14 : 0;
+	c == 'f' ? ret = 10 : 0;
 	return (ret);
 }
 
-int 	pf_type_group(int c)	//Return number of type group;
+int				pf_type_group(int c)
 {
 	if (c >= 1 && c <= 2)
 		return (1);
@@ -33,6 +31,8 @@ int 	pf_type_group(int c)	//Return number of type group;
 		return (2);
 	if (((c >= 4 && c <= 9) || c == 17))
 		return (3);
+	if (c == 10)
+		return (10);
 	if (c == 100)
 		return (100);
 	return (0);
@@ -51,33 +51,28 @@ static t_type	*pf_add_end_list(t_type **head)
 	while (buff->next)
 		buff = buff->next;
 	buff->next = pf_create_type_lst();
-	return(buff->next);
+	return (buff->next);
 }
 
-void	pf_parce_flag(t_type *buff, char *str)		//Записывает флаги в структуру в соответствии с группой типа
+void			pf_parce_flag(t_type *buff, char *str)
 {
-	int i;
-
-	i = pf_type_group(buff->type);
 	while (*str && pf_is_type(*str) == 0)
 	{
 		pf_type_deafult_flags(buff, str);
-		pf_type_cs_flags(buff, str);
 		pf_type_diouxX_flags(buff, str);
 		str++;
 	}
 }
 
-void	pf_type_initiation(t_type **head, char *format)
+void			pf_type_initiation(t_type **head, char *format)
 {
 	char	*buff_begin;
-	char 	*buff_end;
+	char	*buff_end;
 	t_type	*type_buff;
 
 	buff_begin = format;
-	while(*buff_begin)
+	while (*buff_begin)
 	{
-
 		if (*buff_begin == '%' && *(buff_begin + 1))
 		{
 			type_buff = pf_add_end_list(head);

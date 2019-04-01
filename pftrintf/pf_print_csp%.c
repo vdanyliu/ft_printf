@@ -1,10 +1,10 @@
 #include "ft_printf.h"
 
-void	pf_print_procent(t_type *buff)
+void		pf_print_procent(t_type *buff)
 {
 	char	*str1;
-	char 	*str2;
-	size_t 	i;
+	char	*str2;
+	size_t	i;
 
 	str2 = (char*)malloc(sizeof(char) * 2);
 	str2[0] = '%';
@@ -20,8 +20,8 @@ void	pf_print_procent(t_type *buff)
 static void	pf_print_char(t_type *buff, char c)
 {
 	char	*str1;
-	char 	*str2;
-	size_t 	i;
+	char	*str2;
+	size_t	i;
 
 	str2 = (char*)malloc(sizeof(char) * 2);
 	str2[0] = c;
@@ -40,9 +40,9 @@ static void	pf_print_char(t_type *buff, char c)
 static void	pf_print_string(t_type *buff, char *str)
 {
 	char	*str1;
-	char 	*str2;
-	size_t 	i;
-	char 	*strnull;
+	char	*str2;
+	size_t	i;
+	char	*strnull;
 
 	if (str == NULL)
 	{
@@ -50,28 +50,26 @@ static void	pf_print_string(t_type *buff, char *str)
 		if (buff->accur->number == -1)
 			str2 = ft_strdup(strnull);
 		else
-			str2 = ft_strsub(strnull, 0, strnull - (strnull - buff->accur->number));
+			str2 = ft_strsub(strnull, 0,
+					strnull - (strnull - buff->accur->number));
 		free(strnull);
 	}
+	else if (buff->accur->number == -1)
+		str2 = ft_strdup(str);
 	else
-		if (buff->accur->number == -1)
-			str2 = ft_strdup(str);
-		else
-			str2 = ft_strsub(str, 0, str - (str - buff->accur->number));
+		str2 = ft_strsub(str, 0, str - (str - buff->accur->number));
 	str1 = pf_spaces(buff, (buff->width->width - (int)ft_strlen(str2)));
 	str1 = pf_union(buff, str1, str2);
 	i = ft_strlen(str1);
-	g_len += i;
-	write(1, str1, i);
+	g_len += write(1, str1, i);
 	free(str1);
 }
 
-static void pf_print_pointer(t_type *buff, unsigned long long int j)
+static void	pf_print_pointer(t_type *buff, unsigned long long int j)
 {
 	char	*str1;
-	char 	*str2;
-	size_t 	i;
-	char 	*leak;
+	char	*str2;
+	char	*leak;
 
 	str2 = pf_itoabase(j, 16);
 	str2 = pf_pointer_accur(buff->accur->number, str2);
@@ -79,14 +77,20 @@ static void pf_print_pointer(t_type *buff, unsigned long long int j)
 	str2 = ft_strjoin("0x", str2);
 	free(leak);
 	str1 = pf_spaces(buff, (buff->width->width - ft_strlen(str2)));
+	if (j != 0 || buff->flag->zero == 0)
 	str1 = pf_union(buff, str1, str2);
-	i = ft_strlen(str1);
-	g_len += i;
-	write(1, str1, i);
+	else
+	{
+		leak = str1;
+		str1 = ft_strjoin(str2, str1);
+		free(leak);
+		free(str2);
+	}
+	g_len += write(1, str1, ft_strlen(str1));;
 	free(str1);
 }
 
-void	pf_print_csp(t_type *buff, va_list ptr)
+void		pf_print_csp(t_type *buff, va_list ptr)
 {
 	if (buff->type == 1)
 		pf_print_char(buff, va_arg(ptr, int));

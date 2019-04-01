@@ -1,6 +1,6 @@
 #include "ft_printf.h"
 
-static long double	pf_powun(int nbr, int pow)
+long double					pf_powun(int nbr, int pow)
 {
 	long double	res;
 
@@ -14,7 +14,7 @@ char						*pf_itoabase(long long i, int base)
 {
 	char	*str;
 	int		j;
-	int 	minus;
+	int		minus;
 
 	j = 1;
 	minus = 0;

@@ -1,6 +1,3 @@
-//
-// Created by Volodymyr DANYLIUK on 2019-02-06.
-//
 
 #ifndef FT_PRINTF_H
 # define FT_PRINTF_H
@@ -10,33 +7,33 @@
 
 typedef struct			s_flag
 {
-	char 				minus;
+	char				minus;
 	char				plus;
 	char				space;
-	char 				hesh;
+	char				hesh;
 	char				zero;
 }						t_flag;
 
 typedef struct			s_width
 {
-	int 				width;
-	char 				star;
+	int					width;
+	char				star;
 }						t_width;
 
 typedef struct			s_accuracy
 {
-	int 				number;
-	char 				star;
+	int					number;
+	char				star;
 }						t_accuracy;
 
 typedef struct			s_specifier
 {
-	int 				specifier;
+	int					specifier;
 }						t_specifier;
 
 typedef struct			s_type
 {
-	int 				type;
+	int					type;
 	int					spec;
 	struct s_accuracy	*accur;
 	struct s_width		*width;
@@ -78,7 +75,10 @@ char 					*pf_add_one_space_before(char *str);
 char 					*pf_add_hash_flag(t_type *buff, char *str, int base);
 void					pf_hesh_replace(char *str);
 void					pf_bonus_rules(t_type *buff);
-void					pf_print_float(t_type *buff, double num);
+void					pf_print_float(t_type *buff, long double num);
 long double				pf_powun(int nbr, int pow);
+int 					pf_nan_inf(t_type *buff, long double num);
+int 					ft_minuszero(double i);
+int 					pf_is_zero(char *str);
 
 #endif

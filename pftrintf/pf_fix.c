@@ -1,10 +1,10 @@
 #include "ft_printf.h"
 
-char 					*pf_plus_fix(char *str)
+char		*pf_plus_fix(char *str)
 {
 	char	*buff;
-	char 	*str_buff;
-	int 	i;
+	char	*str_buff;
+	int		i;
 	char	*new_str;
 
 	if (*str == '-')
@@ -18,7 +18,7 @@ char 					*pf_plus_fix(char *str)
 	while (*str_buff)
 		*buff++ = *str_buff++;
 	*buff = '\0';
-	free (str);
+	free(str);
 	return (new_str);
 }
 
@@ -34,14 +34,17 @@ char		*pf_accur_fixdiouxX(int i, char *str)
 	buff = str;
 	if (*buff == '-' || *buff == '+' || *buff == ' ')
 		plus_minus = 1;
-	if (i == 0 && *str == '0')
+	if (i == 0 && (*str == '0' || (*str == ' ' && *(str + 1) == '0') || (*str == '+' && *(str + 1) == '0')))
 	{
 		free(str);
-		return (ft_strdup(""));
+		*str == '0' ? str = ft_strdup("") : 0;
+		*str == '+' ? str = ft_strdup("+") : 0;
+		*str == ' ' ? str = ft_strdup(" ") : 0;
+		return (str);
 	}
 	if ((j = (ft_strlen(buff) - plus_minus)) >= i)
 		return (str);
-	new_str = (char *) malloc(sizeof(char) * i + plus_minus + 1);
+	new_str = (char *)malloc(sizeof(char) * i + plus_minus + 1);
 	*(new_str + i + plus_minus) = '\0';
 	new_str_buff = new_str;
 	if (plus_minus == 1)
@@ -59,11 +62,11 @@ char		*pf_accur_fixdiouxX(int i, char *str)
 	return (new_str);
 }
 
-char 					*pf_pointer_accur(int i, char *str)
+char			*pf_pointer_accur(int i, char *str)
 {
 	char	*buff;
-	int 	len;
-	char 	*zero;
+	int		len;
+	char	*zero;
 
 	len = (int)ft_strlen(str);
 	if (i == 0 && *str == '0')
@@ -86,10 +89,10 @@ char 					*pf_pointer_accur(int i, char *str)
 	return (buff);
 }
 
-char 					*pf_add_one_space_before(char *str)
+char			*pf_add_one_space_before(char *str)
 {
 	char	*leak;
-	char 	*space;
+	char	*space;
 
 	space = ft_strdup(" ");
 	leak = str;
@@ -99,7 +102,7 @@ char 					*pf_add_one_space_before(char *str)
 	return (str);
 }
 
-char 					*pf_add_hash_flag(t_type *buff, char *str, int base)
+char			*pf_add_hash_flag(t_type *buff, char *str, int base)
 {
 	char *hesh;
 	char *leak;
@@ -111,13 +114,13 @@ char 					*pf_add_hash_flag(t_type *buff, char *str, int base)
 		str = ft_strdup("0");
 		return (str);
 	}
-	if((*str == '0' && !*(str + 1)) || !*str)
+	if ((*str == '0' && !*(str + 1)) || !*str)
 		return (str);
 	base == 16 ? hesh = ft_strdup("0x") : 0;
 	base == 8 ? hesh = ft_strdup("0") : 0;
 	if (hesh == NULL)
 		return (str);
-	if (base == 8 && *str == '0')
+	if ((base == 8 && *str == '0') || (base == 16 && pf_is_zero(str)))
 	{
 		free(hesh);
 		return (str);

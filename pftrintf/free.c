@@ -15,14 +15,13 @@ void		ft_free_t_type(t_type *head)
 	}
 }
 
-char 		*pf_union(t_type *buff, char *str1, char *str2)
+char		*pf_union(t_type *buff, char *str1, char *str2)
 {
 	size_t	i;
 	char	*res;
-	char 	*res_buff;
-	char 	*str1buff;
-	char 	*str2buff;
-
+	char	*res_buff;
+	char	*str1buff;
+	char	*str2buff;
 
 	if (str1 == NULL)
 		return (str2);
@@ -54,11 +53,11 @@ char 		*pf_union(t_type *buff, char *str1, char *str2)
 	return (res);
 }
 
-char 		*pf_spaces(t_type *buff, int i)
+char		*pf_spaces(t_type *buff, int i)
 {
 	char	*str;
-	int 	j;
-	char 	c;
+	int		j;
+	char	c;
 
 	if (i <= 0)
 		return (NULL);

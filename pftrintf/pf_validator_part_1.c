@@ -1,6 +1,3 @@
-//
-// Created by Volodymyr DANYLIUK on 2019-03-01.
-//
 
 #include "ft_printf.h"
 

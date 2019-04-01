@@ -1,10 +1,7 @@
-//
-// Created by Volodymyr DANYLIUK on 2019-03-01.
-//
 
 #include "ft_printf.h"
 
-t_flag			*pf_create_flag_lst()
+t_flag			*pf_create_flag_lst(void)
 {
 	t_flag	*lst;
 
@@ -17,7 +14,7 @@ t_flag			*pf_create_flag_lst()
 	return (lst);
 }
 
-t_width			*pf_create_width_lst()
+t_width			*pf_create_width_lst(void)
 {
 	t_width	*lst;
 
@@ -27,7 +24,7 @@ t_width			*pf_create_width_lst()
 	return (lst);
 }
 
-t_accuracy		*pf_create_accur_lst()
+t_accuracy		*pf_create_accur_lst(void)
 {
 	t_accuracy	*lst;
 
@@ -37,7 +34,7 @@ t_accuracy		*pf_create_accur_lst()
 	return (lst);
 }
 
-t_type			*pf_create_type_lst()
+t_type			*pf_create_type_lst(void)
 {
 	t_type	*lst;
 
